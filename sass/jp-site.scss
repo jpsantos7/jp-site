@@ -1,0 +1,55 @@
+/* @import "compass/reset"; */
+
+@import "compass/utilities";
+@import "compass/utilities/general/hacks";
+@import "compass/css3";
+@import "compass/css3/images";
+/* Theme colors */
+$clr-lighter: #2E6FF2;
+$clr-light: #5EBAF2;
+$clr-medium: #456673;
+$clr-dark: #232F40;
+$clr-em: #2E6FF2;
+@import "compass/typography";
+@import "grid";
+@import "typesettings";
+$experimental-support-for-svg: true;
+
+
+
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  text-rendering: auto;
+  background: url(/images/Rust-17.png);
+  background-repeat: repeat;
+  background-size: 500px 500px;
+}
+
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+}
+
+header {
+}
+
+section {
+  width: 100%;
+  overflow: hidden;
+  background: $clr-medium;
+  float: left;
+  @include box-sizing(border-box);
+}
+
+aside {
+  float: left;
+  @include box-sizing(border-box);
+  background: $clr-light;
+}
+
+footer {
+  clear: both;
+}
