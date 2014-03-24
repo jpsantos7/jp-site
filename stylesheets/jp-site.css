@@ -1,4 +1,4 @@
-@charset "CP850";
+@charset "UTF-8";
 /* @import "compass/reset"; */
 /* Theme colors */
 /*
@@ -25,7 +25,7 @@
 /* line 61, ../sass/_grid.scss */
 .container {
   position: relative;
-  max-width: 960px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0;
 }
@@ -234,6 +234,33 @@
 }
 
 /* line 225, ../sass/_grid.scss */
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  border: 1px solid #bdbdbd;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  -ms-border-radius: 4;
+  -o-border-radius: 4;
+  border-radius: 4;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  border: 1px solid #333;
+}
+
+/* line 244, ../sass/_grid.scss */
 .col-1-g,
 .col-2-g,
 .col-3-g,
@@ -261,6 +288,10 @@
   border-radius: 4;
   margin-bottom: 2%;
   margin-top: 2%;
+  border: 1px solid;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Offsets */
@@ -332,7 +363,7 @@
 /* Note: Design for a width of 320px */
 @media only screen and (max-width: 767px) {
   /* .container { width: 300px; } */
-  /* line 323, ../sass/_grid.scss */
+  /* line 356, ../sass/_grid.scss */
   .col-1-g,
   .col-2-g,
   .col-3-g,
@@ -344,7 +375,19 @@
   .col-9-g,
   .col-10-g,
   .col-11-g,
-  .col-12-g {
+  .col-12-g,
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
     width: -webkit-calc((((100% + 2%) / 12) * 12) - 2%);
     width: -moz-calc((((100% + 2%) / 12) * 12) - 2%);
     width: calc((((100% + 2%) / 12) * 12) - 2%);
@@ -398,7 +441,7 @@
 /* #Clearing
 ================================================== */
 /* Self Clearing Goodness */
-/* line 384, ../sass/_grid.scss */
+/* line 417, ../sass/_grid.scss */
 .container:after {
   content: "\0020";
   display: block;
@@ -409,7 +452,7 @@
 
 /* Use clearfix class on parent to clear nested columns,
 or wrap each row of columns in a <div class="row"> */
-/* line 391, ../sass/_grid.scss */
+/* line 424, ../sass/_grid.scss */
 .clearfix:before,
 .clearfix:after,
 .row:before,
@@ -422,20 +465,20 @@ or wrap each row of columns in a <div class="row"> */
   height: 0;
 }
 
-/* line 399, ../sass/_grid.scss */
+/* line 432, ../sass/_grid.scss */
 .row:after,
 .clearfix:after {
   clear: both;
 }
 
-/* line 402, ../sass/_grid.scss */
+/* line 435, ../sass/_grid.scss */
 .row,
 .clearfix {
   zoom: 1;
 }
 
 /* You can also use a <br class="clear" /> to clear columns */
-/* line 406, ../sass/_grid.scss */
+/* line 439, ../sass/_grid.scss */
 .clear {
   clear: both;
   display: block;
@@ -676,29 +719,56 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
   text-rendering: auto;
-  background: url(/images/Rust-17.png);
+  background: url(/images/billie-holiday.png), #f2f1ed;
   background-repeat: repeat;
-  background-size: 500px 500px;
+  background-size: 100px 100px;
 }
 
-/* line 31, ../sass/jp-site.scss */
+/* line 30, ../sass/jp-site.scss */
 .container {
-  max-width: 960px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
+/* line 34, ../sass/jp-site.scss */
+.splash {
+  width: 100%;
+  overflow: hidden;
+  padding: 2% 0;
+}
+
 /* line 39, ../sass/jp-site.scss */
+.wall {
+  background-image: url(/images/wall-1920.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* line 46, ../sass/jp-site.scss */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* line 51, ../sass/jp-site.scss */
+img.jp-present {
+  margin: 0 auto;
+}
+
+/* line 55, ../sass/jp-site.scss */
 section {
   width: 100%;
   overflow: hidden;
-  background: #456673;
   float: left;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 47, ../sass/jp-site.scss */
+/* line 62, ../sass/jp-site.scss */
 aside {
   float: left;
   -webkit-box-sizing: border-box;
@@ -707,7 +777,7 @@ aside {
   background: #5ebaf2;
 }
 
-/* line 53, ../sass/jp-site.scss */
+/* line 68, ../sass/jp-site.scss */
 footer {
   clear: both;
 }

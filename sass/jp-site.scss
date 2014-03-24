@@ -22,24 +22,39 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
   text-rendering: auto;
-  background: url(/images/Rust-17.png);
+  background: url(/images/billie-holiday.png), #f2f1ed;
   background-repeat: repeat;
-  background-size: 500px 500px;
+  background-size: 100px 100px;
 }
-
 
 .container {
   max-width: $container-width;
   margin: 0 auto;
 }
-
-header {
+.splash {
+  width: 100%;
+  overflow: hidden;
+  padding: 2% 0;
+}
+.wall {
+  background-image: url(/images/wall-1920.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+img.jp-present {
+  margin: 0 auto;
 }
 
 section {
   width: 100%;
   overflow: hidden;
-  background: $clr-medium;
   float: left;
   @include box-sizing(border-box);
 }

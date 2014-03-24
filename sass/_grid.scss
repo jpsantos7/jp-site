@@ -26,7 +26,7 @@
 /* Grid Definition */
 $columns: 12;
 $gutter: 2%;
-$container-width: 960px;
+$container-width: 100%;
 /* -webkit-calc */
 @function webkit-grid-width($cols, $has-gutter:false) {
   @if $has-gutter {
@@ -211,6 +211,25 @@ $container-width: 960px;
   width: moz-grid-width(12,true);
   width: grid-width(12,true);
 }
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  border: 1px solid #bdbdbd;
+  @include box-sizing(border-box);
+  @include border-radius(4);
+  margin-bottom: $gutter;
+  margin-top: $gutter;
+  border: 1px solid #333;
+}
 .col-1-g,
 .col-2-g,
 .col-3-g,
@@ -230,6 +249,8 @@ $container-width: 960px;
   @include border-radius(4);
   margin-bottom: $gutter;
   margin-top: $gutter;
+  border: 1px solid;
+  @include box-sizing(border-box);
 }
 
 /* Offsets */
@@ -320,11 +341,23 @@ $container-width: 960px;
   .col-9-g,
   .col-10-g,
   .col-11-g,
-  .col-12-g {
+  .col-12-g,
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
     width: webkit-grid-width(12,true);
     width: moz-grid-width(12,true);
     width: grid-width(12,true);
-   }
+  }
 
   /* Offsets */
   /* .container .offset-by-one,
