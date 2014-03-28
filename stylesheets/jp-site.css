@@ -746,19 +746,64 @@ body {
   background-position: center center;
 }
 
-/* line 46, ../sass/jp-site.scss */
+/* =========== HEADER MENU ============= */
+/* line 48, ../sass/jp-site.scss */
+.header-menu ul {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  list-style: none;
+  padding: 0;
+  display: table;
+  margin: 0px;
+  width: 100%;
+}
+/* line 55, ../sass/jp-site.scss */
+.header-menu ul li {
+  text-align: center;
+  margin-bottom: 0.75023em;
+  font-size: 1.9994em;
+  line-height: 1.12534;
+  font-weight: 300;
+}
+/* line 60, ../sass/jp-site.scss */
+.header-menu ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* line 68, ../sass/jp-site.scss */
+a {
+  text-decoration: none;
+  font-weight: 700;
+  font-style: italic;
+  color: initial;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid transparent;
+}
+/* line 75, ../sass/jp-site.scss */
+a:hover, a :active {
+  color: #2e6ff2;
+  border-bottom: 1px dotted goldenrod;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 83, ../sass/jp-site.scss */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* line 51, ../sass/jp-site.scss */
+/* line 88, ../sass/jp-site.scss */
 img.jp-present {
   margin: 0 auto;
 }
 
-/* line 55, ../sass/jp-site.scss */
+/* line 92, ../sass/jp-site.scss */
 section {
   width: 100%;
   overflow: hidden;
@@ -768,7 +813,7 @@ section {
   box-sizing: border-box;
 }
 
-/* line 62, ../sass/jp-site.scss */
+/* line 99, ../sass/jp-site.scss */
 aside {
   float: left;
   -webkit-box-sizing: border-box;
@@ -777,7 +822,7 @@ aside {
   background: #5ebaf2;
 }
 
-/* line 68, ../sass/jp-site.scss */
+/* line 105, ../sass/jp-site.scss */
 footer {
   clear: both;
 }
