@@ -26,7 +26,7 @@
 /* Grid Definition */
 $columns: 12;
 $gutter: 2%;
-$container-width: 100%;
+$container-width: 1170px;
 /* -webkit-calc */
 @function webkit-grid-width($cols, $has-gutter:false) {
   @if $has-gutter {
@@ -223,12 +223,12 @@ $container-width: 100%;
 .col-10,
 .col-11,
 .col-12 {
-  border: 1px solid #bdbdbd;
+  float: left;
+  display: inline;
   @include box-sizing(border-box);
   @include border-radius(4);
   margin-bottom: $gutter;
   margin-top: $gutter;
-  border: 1px solid #333;
 }
 .col-1-g,
 .col-2-g,
@@ -242,6 +242,8 @@ $container-width: 100%;
 .col-10-g,
 .col-11-g,
 .col-12-g {
+  float: left;
+  display: inline;
   @include calc(margin-right, $gutter / 2);
   @include calc(margin-left, $gutter / 2);
   padding: 1em;

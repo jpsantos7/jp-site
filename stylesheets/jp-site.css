@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /* @import "compass/reset"; */
-/* Theme colors */
 /*
 * Skeleton V1.2
 * Copyright 2011, Dave Gamache
@@ -25,7 +24,7 @@
 /* line 61, ../sass/_grid.scss */
 .container {
   position: relative;
-  max-width: 100%;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0;
 }
@@ -246,7 +245,8 @@
 .col-10,
 .col-11,
 .col-12 {
-  border: 1px solid #bdbdbd;
+  float: left;
+  display: inline;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -257,7 +257,6 @@
   border-radius: 4;
   margin-bottom: 2%;
   margin-top: 2%;
-  border: 1px solid #333;
 }
 
 /* line 244, ../sass/_grid.scss */
@@ -273,6 +272,8 @@
 .col-10-g,
 .col-11-g,
 .col-12-g {
+  float: left;
+  display: inline;
   margin-right: -moz-calc(1%);
   margin-right: -webkit-calc(1%);
   margin-right: calc(1%);
@@ -363,7 +364,7 @@
 /* Note: Design for a width of 320px */
 @media only screen and (max-width: 767px) {
   /* .container { width: 300px; } */
-  /* line 356, ../sass/_grid.scss */
+  /* line 358, ../sass/_grid.scss */
   .col-1-g,
   .col-2-g,
   .col-3-g,
@@ -441,7 +442,7 @@
 /* #Clearing
 ================================================== */
 /* Self Clearing Goodness */
-/* line 417, ../sass/_grid.scss */
+/* line 419, ../sass/_grid.scss */
 .container:after {
   content: "\0020";
   display: block;
@@ -452,7 +453,7 @@
 
 /* Use clearfix class on parent to clear nested columns,
 or wrap each row of columns in a <div class="row"> */
-/* line 424, ../sass/_grid.scss */
+/* line 426, ../sass/_grid.scss */
 .clearfix:before,
 .clearfix:after,
 .row:before,
@@ -465,20 +466,20 @@ or wrap each row of columns in a <div class="row"> */
   height: 0;
 }
 
-/* line 432, ../sass/_grid.scss */
+/* line 434, ../sass/_grid.scss */
 .row:after,
 .clearfix:after {
   clear: both;
 }
 
-/* line 435, ../sass/_grid.scss */
+/* line 437, ../sass/_grid.scss */
 .row,
 .clearfix {
   zoom: 1;
 }
 
 /* You can also use a <br class="clear" /> to clear columns */
-/* line 439, ../sass/_grid.scss */
+/* line 441, ../sass/_grid.scss */
 .clear {
   clear: both;
   display: block;
@@ -515,7 +516,7 @@ body {
   font-family: "Quattrocento Sans", "Source Sans Pro", sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  color: white;
+  color: #333333;
 }
 
 /* line 148, ../sass/_typesettings.scss */
@@ -533,6 +534,7 @@ h1, .h1 {
   font-size: 1.9994em;
   line-height: 1.12534;
   font-weight: 300;
+  text-align: center;
 }
 @media (min-width: 43.75em) {
   /* line 161, ../sass/_typesettings.scss */
@@ -551,7 +553,7 @@ h1, .h1 {
   }
 }
 
-/* line 178, ../sass/_typesettings.scss */
+/* line 179, ../sass/_typesettings.scss */
 h2, .h2 {
   margin-bottom: 1.06082em;
   font-size: 1.414em;
@@ -559,7 +561,7 @@ h2, .h2 {
   font-weight: 400;
 }
 @media (min-width: 43.75em) {
-  /* line 178, ../sass/_typesettings.scss */
+  /* line 179, ../sass/_typesettings.scss */
   h2, .h2 {
     margin-bottom: 0.75023em;
     font-size: 1.9994em;
@@ -567,7 +569,7 @@ h2, .h2 {
   }
 }
 @media (min-width: 56.25em) {
-  /* line 178, ../sass/_typesettings.scss */
+  /* line 179, ../sass/_typesettings.scss */
   h2, .h2 {
     margin-bottom: 0.53057em;
     font-size: 2.82715em;
@@ -575,7 +577,7 @@ h2, .h2 {
   }
 }
 
-/* line 194, ../sass/_typesettings.scss */
+/* line 195, ../sass/_typesettings.scss */
 h3, .h3 {
   margin-bottom: 1.06082em;
   font-size: 1.414em;
@@ -583,7 +585,7 @@ h3, .h3 {
   font-weight: 600;
 }
 @media (min-width: 56.25em) {
-  /* line 194, ../sass/_typesettings.scss */
+  /* line 195, ../sass/_typesettings.scss */
   h3, .h3 {
     margin-bottom: 0.75023em;
     font-size: 1.9994em;
@@ -591,7 +593,7 @@ h3, .h3 {
   }
 }
 
-/* line 205, ../sass/_typesettings.scss */
+/* line 206, ../sass/_typesettings.scss */
 h4, .h4 {
   margin-bottom: 1.06082em;
   font-size: 1.414em;
@@ -599,7 +601,7 @@ h4, .h4 {
   font-weight: 700;
 }
 
-/* line 211, ../sass/_typesettings.scss */
+/* line 212, ../sass/_typesettings.scss */
 h5, h6, .h6, .h5 {
   margin-bottom: 1.5em;
   font-size: 1em;
@@ -607,7 +609,7 @@ h5, h6, .h6, .h5 {
   font-weight: 900;
 }
 
-/* line 221, ../sass/_typesettings.scss */
+/* line 222, ../sass/_typesettings.scss */
 p {
   margin-top: 0;
   padding: 0 auto;
@@ -618,38 +620,40 @@ p {
   hyphens: auto;
   word-wrap: break-word;
   max-width: 36em;
+  margin: 0 2%;
   margin-bottom: 1.5em;
 }
 @media (min-width: 43.75em) {
-  /* line 221, ../sass/_typesettings.scss */
+  /* line 222, ../sass/_typesettings.scss */
   p {
     text-align: justify;
   }
 }
 
-/* line 241, ../sass/_typesettings.scss */
-p + p {
-  margin-top: -1.5em;
-  text-indent: 1.5em;
+/* @if $paragraph-indent {
+  p + p {
+    margin-top: emRhythm(-4);
+    text-indent: emRhythm(4);
+  }
 }
-
-/* line 247, ../sass/_typesettings.scss */
+ */
+/* line 249, ../sass/_typesettings.scss */
 small, .font-small {
   font-size: 0.70721em;
   line-height: 1.59075;
 }
 
-/* line 251, ../sass/_typesettings.scss */
+/* line 253, ../sass/_typesettings.scss */
 em {
   font-style: italic;
 }
 
-/* line 255, ../sass/_typesettings.scss */
+/* line 257, ../sass/_typesettings.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 259, ../sass/_typesettings.scss */
+/* line 261, ../sass/_typesettings.scss */
 blockquote {
   padding: 0 auto;
   font-family: "Lucida Console", Monaco, monospace;
@@ -660,22 +664,22 @@ blockquote {
   margin-left: -1.875em;
   border-left: 6px solid gray;
 }
-/* line 271, ../sass/_typesettings.scss */
+/* line 273, ../sass/_typesettings.scss */
 blockquote footer cite:before {
   content: " – ";
 }
 
-/* line 278, ../sass/_typesettings.scss */
+/* line 280, ../sass/_typesettings.scss */
 pre, code {
   font-family: "Lucida Console", Monaco, monospace;
 }
 
-/* line 282, ../sass/_typesettings.scss */
+/* line 284, ../sass/_typesettings.scss */
 time, .time {
   text-transform: uppercase;
 }
 
-/* line 286, ../sass/_typesettings.scss */
+/* line 288, ../sass/_typesettings.scss */
 ol, ul {
   margin-top: 0;
   padding: 0 auto;
@@ -683,38 +687,38 @@ ol, ul {
   margin-left: 1.5em;
 }
 
-/* line 293, ../sass/_typesettings.scss */
+/* line 295, ../sass/_typesettings.scss */
 ul {
   list-style: disc;
 }
-/* line 296, ../sass/_typesettings.scss */
+/* line 298, ../sass/_typesettings.scss */
 ul ul {
   margin-bottom: 0;
 }
 
-/* line 303, ../sass/_typesettings.scss */
+/* line 305, ../sass/_typesettings.scss */
 ol ol {
   margin-bottom: 0;
 }
 
-/* line 308, ../sass/_typesettings.scss */
+/* line 310, ../sass/_typesettings.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 312, ../sass/_typesettings.scss */
+/* line 314, ../sass/_typesettings.scss */
 abbr {
   font-variant: small-caps;
   font-weight: 600;
   text-transform: lowercase;
 }
 
-/* line 318, ../sass/_typesettings.scss */
+/* line 320, ../sass/_typesettings.scss */
 abbr[title]:hover {
   cursor: help;
 }
 
-/* line 21, ../sass/jp-site.scss */
+/* line 13, ../sass/jp-site.scss */
 body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
@@ -724,30 +728,70 @@ body {
   background-size: 100px 100px;
 }
 
-/* line 30, ../sass/jp-site.scss */
-.container {
-  max-width: 100%;
-  margin: 0 auto;
+/* line 21, ../sass/jp-site.scss */
+p {
+  text-align: justify;
+  display: block;
+  margin: 0 auto 2%;
 }
 
-/* line 34, ../sass/jp-site.scss */
-.splash {
-  width: 100%;
+/* line 26, ../sass/jp-site.scss */
+.page-wrapper {
   overflow: hidden;
-  padding: 2% 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  -moz-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  -o-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  -ms-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
 }
-
-/* line 39, ../sass/jp-site.scss */
-.wall {
-  background-image: url(/images/wall-1920.jpg);
+/* line 38, ../sass/jp-site.scss */
+.page-wrapper.background-home {
+  background-image: url(/images/background-jp.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
+/* line 46, ../sass/jp-site.scss */
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* line 50, ../sass/jp-site.scss */
+.splash {
+  width: 100%;
+  overflow: hidden;
+  padding: 2% 0;
+}
+
 /* =========== HEADER MENU ============= */
-/* line 48, ../sass/jp-site.scss */
+/* line 56, ../sass/jp-site.scss */
+.logo-link {
+  color: #fff;
+  padding: 18px;
+  display: inline-block;
+  font-size: 1.414em;
+  line-height: 1.32603;
+  font-weight: 300;
+  height: 100%;
+  border-bottom: 0;
+  border-bottom: 1px solid transparent;
+}
+/* line 65, ../sass/jp-site.scss */
+.logo-link:hover, .logo-link:active {
+  border-bottom: 0;
+  outline: 0;
+  text-decoration: none;
+}
+
+/* line 72, ../sass/jp-site.scss */
 .header-menu ul {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   list-style: none;
@@ -756,54 +800,80 @@ body {
   margin: 0px;
   width: 100%;
 }
-/* line 55, ../sass/jp-site.scss */
+/* line 79, ../sass/jp-site.scss */
 .header-menu ul li {
+  float: left;
   text-align: center;
-  margin-bottom: 0.75023em;
-  font-size: 1.9994em;
-  line-height: 1.12534;
-  font-weight: 300;
+  font-size: 1.414em;
+  line-height: 1.32603;
 }
-/* line 60, ../sass/jp-site.scss */
+/* line 83, ../sass/jp-site.scss */
 .header-menu ul li a {
-  width: 100%;
+  color: #fff;
+  font-weight: 300;
   height: 100%;
-  display: block;
+  display: inline-block;
+  padding: 10px;
+  margin: 0 auto;
+  border-bottom: 1px solid #fff;
+  text-transform: uppercase;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  -moz-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  -o-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  -ms-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+}
+/* line 102, ../sass/jp-site.scss */
+.header-menu ul li a:hover, .header-menu ul li a:active {
+  color: #c4dcff;
+  border-bottom: 1px solid #c4dcff;
 }
 
-/* line 68, ../sass/jp-site.scss */
+/* header presentation styles */
+/* line 111, ../sass/jp-site.scss */
+.header {
+  padding: 18%;
+  color: #fff;
+}
+/* line 115, ../sass/jp-site.scss */
+.header .presentation h5, .header .presentation h6, .header .presentation .h6 {
+  font-weight: 300;
+  text-align: center;
+}
+
+/* link styles */
+/* line 122, ../sass/jp-site.scss */
 a {
   text-decoration: none;
   font-weight: 700;
-  font-style: italic;
   color: initial;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-bottom: 1px solid transparent;
 }
-/* line 75, ../sass/jp-site.scss */
+/* line 128, ../sass/jp-site.scss */
 a:hover, a :active {
-  color: #2e6ff2;
+  color: gummi;
   border-bottom: 1px dotted goldenrod;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-/* line 83, ../sass/jp-site.scss */
+/* line 136, ../sass/jp-site.scss */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* line 88, ../sass/jp-site.scss */
-img.jp-present {
-  margin: 0 auto;
-}
-
-/* line 92, ../sass/jp-site.scss */
+/* line 143, ../sass/jp-site.scss */
 section {
   width: 100%;
   overflow: hidden;
@@ -813,16 +883,16 @@ section {
   box-sizing: border-box;
 }
 
-/* line 99, ../sass/jp-site.scss */
+/* line 150, ../sass/jp-site.scss */
 aside {
   float: left;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background: #5ebaf2;
+  background: pink;
 }
 
-/* line 105, ../sass/jp-site.scss */
+/* line 156, ../sass/jp-site.scss */
 footer {
   clear: both;
 }

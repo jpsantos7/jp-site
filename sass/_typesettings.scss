@@ -21,7 +21,7 @@
 $font-sans: 'Source Sans Pro','Helvetica Neue', Helvetica, Arial, sans-serif !default;
 $font-serif: 'Quattrocento Sans', 'Source Sans Pro', sans-serif !default;
 $font-mono: 'Lucida Console', Monaco, monospace !default;
-$text-color: #fff !default;
+$text-color: #333 !default;
 
 // The vertical grid unit. Margin, padding, and line-height are set to multiples of this value.
 // This is the value that determines the baseline for our vertical rhythm. The default value of 6px
@@ -162,6 +162,7 @@ h1, .h1 {
   margin-bottom: emRhythm(4, $ms-up2); // [1]
   @include setType(6, $ms-up2); // [2]
   font-weight: 300;
+  text-align: center;
 
   @media (min-width: 43.75em) {
     // [3]
@@ -228,6 +229,7 @@ p {
   hyphens: auto;
   word-wrap: break-word;
   max-width: emRhythm(96);
+  margin: 0 2%;
   margin-bottom: emRhythm(4);
 
   @media (min-width: 43.75em) {
@@ -237,13 +239,13 @@ p {
   }
 }
 
-@if $paragraph-indent {
+/* @if $paragraph-indent {
   p + p {
     margin-top: emRhythm(-4);
     text-indent: emRhythm(4);
   }
 }
-
+ */
 small, .font-small {
   @include setType(3, $ms-down1);
 }

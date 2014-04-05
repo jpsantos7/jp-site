@@ -4,19 +4,11 @@
 @import "compass/utilities/general/hacks";
 @import "compass/css3";
 @import "compass/css3/images";
-/* Theme colors */
-$clr-lighter: #2E6FF2;
-$clr-light: #5EBAF2;
-$clr-medium: #456673;
-$clr-dark: #232F40;
-$clr-em: #2E6FF2;
+$clr-em: #C4DCFF;
 @import "compass/typography";
 @import "grid";
 @import "typesettings";
 $experimental-support-for-svg: true;
-
-
-
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -26,7 +18,31 @@ body {
   background-repeat: repeat;
   background-size: 100px 100px;
 }
-
+p {
+  text-align: justify;
+  display: block;
+  margin: 0 auto $gutter;
+}
+.page-wrapper {
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  -moz-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  -o-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  -ms-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  &.background-home {
+    background-image: url(/images/background-jp.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
 .container {
   max-width: $container-width;
   margin: 0 auto;
@@ -36,14 +52,22 @@ body {
   overflow: hidden;
   padding: 2% 0;
 }
-.wall {
-  background-image: url(/images/wall-1920.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
 /* =========== HEADER MENU ============= */
+.logo-link {
+  color: #fff;
+  padding: 18px;
+  display: inline-block;
+  @include setType(5, $ms-up1);
+  font-weight: 300;
+  height: 100%;
+  border-bottom: 0;
+  border-bottom: 1px solid transparent;
+  &:hover,&:active {
+    border-bottom: 0;
+    outline: 0;
+    text-decoration: none;
+  }
+}
 .header-menu {
   ul {
     font-family: $font-sans;
@@ -53,27 +77,56 @@ body {
     margin: 0px;
     width: 100%;
     li {
+      float: left;
       text-align: center;
-      margin-bottom: emRhythm(4, $ms-up2);
-      @include setType(6, $ms-up2);
-      font-weight: 300;
+      @include setType(5, $ms-up1);
       a {
-        width: 100%;
+        color: #fff;
+        font-weight: 300;
         height: 100%;
-        display: block;
+        display: inline-block;
+        padding: 10px;
+        margin: 0 auto;
+        border-bottom: 1px solid #fff;
+        text-transform: uppercase;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+        -moz-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+        -o-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+        -ms-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+        transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+        &:hover,&:active {
+          color: $clr-em;
+          border-bottom: 1px solid $clr-em;
+        }
       }
     }
   }
 }
+/* header presentation styles */
+.header {
+  padding: 18%;
+  color: #fff;
+  .presentation {
+    h5 {
+      font-weight: 300;
+      text-align: center;
+    }
+  }
+}
+/* link styles */
 a {
   text-decoration: none;
   font-weight: 700;
-  font-style: italic;
   color: initial;
   @include box-sizing(border-box);
   border-bottom: 1px solid transparent;
   &:hover,:active {
-    color: $clr-em;
+    color: gummi;
     border-bottom: 1px dotted goldenrod;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -85,9 +138,7 @@ img {
   height: auto;
   display: block;
 }
-img.jp-present {
-  margin: 0 auto;
-}
+
 
 section {
   width: 100%;
@@ -99,7 +150,7 @@ section {
 aside {
   float: left;
   @include box-sizing(border-box);
-  background: $clr-light;
+  background: pink;
 }
 
 footer {
