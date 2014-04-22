@@ -8,6 +8,7 @@ $clr-em: #C4DCFF;
 @import "compass/typography";
 @import "grid";
 @import "typesettings";
+@import "entypo-font";
 $experimental-support-for-svg: true;
 
 body {
@@ -25,16 +26,6 @@ p {
 }
 .page-wrapper {
   overflow: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
-  -moz-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
-  -o-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
-  -ms-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
-  transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
   &.background-home {
     background-image: url(/images/background-jp.jpg);
     background-attachment: fixed;
@@ -109,7 +100,7 @@ p {
 }
 /* header presentation styles */
 .header {
-  padding: 18%;
+  padding: 15%;
   color: #fff;
   .presentation {
     h5 {
@@ -118,6 +109,23 @@ p {
     }
   }
 }
+
+/* =========== SOCIAL LINKS ============= */
+.social {
+  background-color: #2e2e2e;
+  a {
+    font-family: 'EntypoSocialRegular';
+    &:hover,&:active {
+      
+    }
+  }
+}
+
+/* =========== FOOTER ============= */
+footer {
+  background-color: #1f1f1f;
+}
+
 /* link styles */
 a {
   text-decoration: none;

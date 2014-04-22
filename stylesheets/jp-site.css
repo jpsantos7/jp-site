@@ -718,7 +718,253 @@ abbr[title]:hover {
   cursor: help;
 }
 
-/* line 13, ../sass/jp-site.scss */
+/* Entypo font declaration */
+@font-face {
+  font-family: 'EntypoSocialRegular';
+  src: url("font/entypo-social.svg#EntypoRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 9, ../sass/_entypo-font.scss */
+.entypo-social {
+  font-family: 'EntypoSocialRegular';
+  font-size: 2em;
+  font-weight: normal;
+  line-height: 0;
+}
+
+/* line 16, ../sass/_entypo-font.scss */
+.entypo-social.github:before {
+  content: '\F300';
+}
+
+/* line 17, ../sass/_entypo-font.scss */
+.entypo-social.c-github:before {
+  content: '\F301';
+}
+
+/* line 18, ../sass/_entypo-font.scss */
+.entypo-social.flickr:before {
+  content: '\F303';
+}
+
+/* line 19, ../sass/_entypo-font.scss */
+.entypo-social.c-flickr:before {
+  content: '\F304';
+}
+
+/* line 20, ../sass/_entypo-font.scss */
+.entypo-social.vimeo:before {
+  content: '\F306';
+}
+
+/* line 21, ../sass/_entypo-font.scss */
+.entypo-social.c-vimeo:before {
+  content: '\F307';
+}
+
+/* line 22, ../sass/_entypo-font.scss */
+.entypo-social.twitter:before {
+  content: '\F309';
+}
+
+/* line 23, ../sass/_entypo-font.scss */
+.entypo-social.c-twitter:before {
+  content: '\F30A';
+}
+
+/* line 24, ../sass/_entypo-font.scss */
+.entypo-social.facebook:before {
+  content: '\F30C';
+}
+
+/* line 25, ../sass/_entypo-font.scss */
+.entypo-social.c-facebook:before {
+  content: '\F30D';
+}
+
+/* line 26, ../sass/_entypo-font.scss */
+.entypo-social.s-facebook:before {
+  content: '\F30E';
+}
+
+/* line 27, ../sass/_entypo-font.scss */
+.entypo-social.gplus:before {
+  content: '\F30F';
+}
+
+/* line 28, ../sass/_entypo-font.scss */
+.entypo-social.c-gplus:before {
+  content: '\F310';
+}
+
+/* line 29, ../sass/_entypo-font.scss */
+.entypo-social.pinterest:before {
+  content: '\F312';
+}
+
+/* line 30, ../sass/_entypo-font.scss */
+.entypo-social.c-pinterest:before {
+  content: '\F313';
+}
+
+/* line 31, ../sass/_entypo-font.scss */
+.entypo-social.tumblr:before {
+  content: '\F315';
+}
+
+/* line 32, ../sass/_entypo-font.scss */
+.entypo-social.c-tumblr:before {
+  content: '\F316';
+}
+
+/* line 33, ../sass/_entypo-font.scss */
+.entypo-social.linkedin:before {
+  content: '\F318';
+}
+
+/* line 34, ../sass/_entypo-font.scss */
+.entypo-social.c-linkedin:before {
+  content: '\F319';
+}
+
+/* line 35, ../sass/_entypo-font.scss */
+.entypo-social.dribbble:before {
+  content: '\F31B';
+}
+
+/* line 36, ../sass/_entypo-font.scss */
+.entypo-social.c-dribbble:before {
+  content: '\F31C';
+}
+
+/* line 37, ../sass/_entypo-font.scss */
+.entypo-social.stumbleupon:before {
+  content: '\F31E';
+}
+
+/* line 38, ../sass/_entypo-font.scss */
+.entypo-social.c-stumbleupon:before {
+  content: '\F31F';
+}
+
+/* line 39, ../sass/_entypo-font.scss */
+.entypo-social.lastfm:before {
+  content: '\F321';
+}
+
+/* line 40, ../sass/_entypo-font.scss */
+.entypo-social.c-lastfm:before {
+  content: '\F322';
+}
+
+/* line 41, ../sass/_entypo-font.scss */
+.entypo-social.rdio:before {
+  content: '\F324';
+}
+
+/* line 42, ../sass/_entypo-font.scss */
+.entypo-social.c-rdio:before {
+  content: '\F325';
+}
+
+/* line 43, ../sass/_entypo-font.scss */
+.entypo-social.spotify:before {
+  content: '\F327';
+}
+
+/* line 44, ../sass/_entypo-font.scss */
+.entypo-social.c-spotify:before {
+  content: '\F328';
+}
+
+/* line 45, ../sass/_entypo-font.scss */
+.entypo-social.qq:before {
+  content: '\F32A';
+}
+
+/* line 46, ../sass/_entypo-font.scss */
+.entypo-social.instagram:before {
+  content: '\F32D';
+}
+
+/* line 47, ../sass/_entypo-font.scss */
+.entypo-social.dropbox:before {
+  content: '\F330';
+}
+
+/* line 48, ../sass/_entypo-font.scss */
+.entypo-social.evernote:before {
+  content: '\F333';
+}
+
+/* line 49, ../sass/_entypo-font.scss */
+.entypo-social.flattr:before {
+  content: '\F336';
+}
+
+/* line 50, ../sass/_entypo-font.scss */
+.entypo-social.skype:before {
+  content: '\F339';
+}
+
+/* line 51, ../sass/_entypo-font.scss */
+.entypo-social.c-skype:before {
+  content: '\F33A';
+}
+
+/* line 52, ../sass/_entypo-font.scss */
+.entypo-social.renren:before {
+  content: '\F33C';
+}
+
+/* line 53, ../sass/_entypo-font.scss */
+.entypo-social.sina-weibo:before {
+  content: '\F33F';
+}
+
+/* line 54, ../sass/_entypo-font.scss */
+.entypo-social.paypal:before {
+  content: '\F342';
+}
+
+/* line 55, ../sass/_entypo-font.scss */
+.entypo-social.picasa:before {
+  content: '\F345';
+}
+
+/* line 56, ../sass/_entypo-font.scss */
+.entypo-social.soundcloud:before {
+  content: '\F348';
+}
+
+/* line 57, ../sass/_entypo-font.scss */
+.entypo-social.mixi:before {
+  content: '\F34B';
+}
+
+/* line 58, ../sass/_entypo-font.scss */
+.entypo-social.behance:before {
+  content: '\F34E';
+}
+
+/* line 59, ../sass/_entypo-font.scss */
+.entypo-social.google-circles:before {
+  content: '\F351';
+}
+
+/* line 60, ../sass/_entypo-font.scss */
+.entypo-social.vk:before {
+  content: '\F354';
+}
+
+/* line 61, ../sass/_entypo-font.scss */
+.entypo-social.smashing:before {
+  content: '\F357';
+}
+
+/* line 14, ../sass/jp-site.scss */
 body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
@@ -728,28 +974,18 @@ body {
   background-size: 100px 100px;
 }
 
-/* line 21, ../sass/jp-site.scss */
+/* line 22, ../sass/jp-site.scss */
 p {
   text-align: justify;
   display: block;
   margin: 0 auto 2%;
 }
 
-/* line 26, ../sass/jp-site.scss */
+/* line 27, ../sass/jp-site.scss */
 .page-wrapper {
   overflow: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
-  -moz-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
-  -o-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
-  -ms-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
-  transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
 }
-/* line 38, ../sass/jp-site.scss */
+/* line 29, ../sass/jp-site.scss */
 .page-wrapper.background-home {
   background-image: url(/images/background-jp.jpg);
   background-attachment: fixed;
@@ -758,13 +994,13 @@ p {
   background-position: center center;
 }
 
-/* line 46, ../sass/jp-site.scss */
+/* line 37, ../sass/jp-site.scss */
 .container {
   max-width: 1170px;
   margin: 0 auto;
 }
 
-/* line 50, ../sass/jp-site.scss */
+/* line 41, ../sass/jp-site.scss */
 .splash {
   width: 100%;
   overflow: hidden;
@@ -772,7 +1008,7 @@ p {
 }
 
 /* =========== HEADER MENU ============= */
-/* line 56, ../sass/jp-site.scss */
+/* line 47, ../sass/jp-site.scss */
 .logo-link {
   color: #fff;
   padding: 18px;
@@ -784,14 +1020,14 @@ p {
   border-bottom: 0;
   border-bottom: 1px solid transparent;
 }
-/* line 65, ../sass/jp-site.scss */
+/* line 56, ../sass/jp-site.scss */
 .logo-link:hover, .logo-link:active {
   border-bottom: 0;
   outline: 0;
   text-decoration: none;
 }
 
-/* line 72, ../sass/jp-site.scss */
+/* line 63, ../sass/jp-site.scss */
 .header-menu ul {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   list-style: none;
@@ -800,14 +1036,14 @@ p {
   margin: 0px;
   width: 100%;
 }
-/* line 79, ../sass/jp-site.scss */
+/* line 70, ../sass/jp-site.scss */
 .header-menu ul li {
   float: left;
   text-align: center;
   font-size: 1.414em;
   line-height: 1.32603;
 }
-/* line 83, ../sass/jp-site.scss */
+/* line 74, ../sass/jp-site.scss */
 .header-menu ul li a {
   color: #fff;
   font-weight: 300;
@@ -828,26 +1064,42 @@ p {
   -ms-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
   transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
 }
-/* line 102, ../sass/jp-site.scss */
+/* line 93, ../sass/jp-site.scss */
 .header-menu ul li a:hover, .header-menu ul li a:active {
   color: #c4dcff;
   border-bottom: 1px solid #c4dcff;
 }
 
 /* header presentation styles */
-/* line 111, ../sass/jp-site.scss */
+/* line 102, ../sass/jp-site.scss */
 .header {
-  padding: 18%;
+  padding: 15%;
   color: #fff;
 }
-/* line 115, ../sass/jp-site.scss */
+/* line 106, ../sass/jp-site.scss */
 .header .presentation h5, .header .presentation h6, .header .presentation .h6 {
   font-weight: 300;
   text-align: center;
 }
 
+/* =========== SOCIAL LINKS ============= */
+/* line 114, ../sass/jp-site.scss */
+.social {
+  background-color: #2e2e2e;
+}
+/* line 116, ../sass/jp-site.scss */
+.social a {
+  font-family: 'EntypoSocialRegular';
+}
+
+/* =========== FOOTER ============= */
+/* line 125, ../sass/jp-site.scss */
+footer {
+  background-color: #1f1f1f;
+}
+
 /* link styles */
-/* line 122, ../sass/jp-site.scss */
+/* line 130, ../sass/jp-site.scss */
 a {
   text-decoration: none;
   font-weight: 700;
@@ -857,7 +1109,7 @@ a {
   box-sizing: border-box;
   border-bottom: 1px solid transparent;
 }
-/* line 128, ../sass/jp-site.scss */
+/* line 136, ../sass/jp-site.scss */
 a:hover, a :active {
   color: gummi;
   border-bottom: 1px dotted goldenrod;
@@ -866,14 +1118,14 @@ a:hover, a :active {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 136, ../sass/jp-site.scss */
+/* line 144, ../sass/jp-site.scss */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* line 143, ../sass/jp-site.scss */
+/* line 151, ../sass/jp-site.scss */
 section {
   width: 100%;
   overflow: hidden;
@@ -883,7 +1135,7 @@ section {
   box-sizing: border-box;
 }
 
-/* line 150, ../sass/jp-site.scss */
+/* line 158, ../sass/jp-site.scss */
 aside {
   float: left;
   -webkit-box-sizing: border-box;
@@ -892,7 +1144,7 @@ aside {
   background: pink;
 }
 
-/* line 156, ../sass/jp-site.scss */
+/* line 164, ../sass/jp-site.scss */
 footer {
   clear: both;
 }
