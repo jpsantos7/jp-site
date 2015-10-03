@@ -19,7 +19,8 @@
 // Config Variables
 // ---------------------
 $font-sans: 'Source Sans Pro','Helvetica Neue', Helvetica, Arial, sans-serif !default;
-$font-serif: 'Quattrocento Sans', 'Source Sans Pro', sans-serif !default;
+/* $font-serif: 'Quattrocento Sans', 'Source Sans Pro', sans-serif !default; */
+$font-serif: 'Alegreya', sans-serif !default;
 $font-mono: 'Lucida Console', Monaco, monospace !default;
 $text-color: #333 !default;
 
@@ -139,7 +140,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: $font-serif;
+  font-family: $font-sans;
   font-weight: 400;
   line-height: $base-line-height;
   color: $text-color;
@@ -150,7 +151,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   padding: 0 auto;
   font-family: $font-sans;
   font-weight: 300;
-  text-transform: uppercase;
 }
 
 // [1] Applies a margin bottom that is a multiple of the vertical grid in EMs. The first argument is the font size context and the second is multiple of the vertical grid unit.
@@ -162,7 +162,6 @@ h1, .h1 {
   margin-bottom: emRhythm(4, $ms-up2); // [1]
   @include setType(6, $ms-up2); // [2]
   font-weight: 300;
-  text-align: center;
 
   @media (min-width: 43.75em) {
     // [3]
@@ -179,7 +178,6 @@ h1, .h1 {
 h2, .h2 {
   margin-bottom: emRhythm(4, $ms-up1);
   @include setType(5, $ms-up1);
-  font-weight: 400;
 
   @media (min-width: 43.75em) {
     margin-bottom: emRhythm(4, $ms-up2);
@@ -195,7 +193,6 @@ h2, .h2 {
 h3, .h3 {
   margin-bottom: emRhythm(4, $ms-up1);
   @include setType(5, $ms-up1);
-  font-weight: 600;
 
   @media (min-width: 56.25em) {
     margin-bottom: emRhythm(4, $ms-up2);
@@ -206,13 +203,11 @@ h3, .h3 {
 h4, .h4 {
   margin-bottom: emRhythm(4, $ms-up1);
   @include setType(5, $ms-up1);
-  font-weight: 700;
 }
 
 h5, .h5 {
   margin-bottom: emRhythm(4);
   @include setType(4);
-  font-weight: 900;
 }
 
 h6, .h6 {
@@ -319,4 +314,66 @@ abbr {
 
 abbr[title]:hover {
   cursor: help; // cursor changed to a question mark when it has a title
+}
+
+.serif {
+  font-family: $font-serif !important;
+}
+
+// Alignment
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+
+// Transformation
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }
+
+/* These handle massive type, for less frequently occuring bits of text (e.g. in mastheads and banners). */
+.giga{
+  font-size:80px;
+  line-height:1.2;    /* 96px */
+}
+.mega{
+  font-size:64px;
+  line-height:1.125;  /* 72px */
+}
+.kilo{
+  font-size:48px;
+  line-height:1;      /* 48px */
+}
+
+/* Define headings and their associated classes here. */
+.alpha {
+  font-size:32px;
+  line-height:1.5;    /* 48px */
+}
+.beta {
+  font-size:24px;    /* 24px */
+  line-height:1;      /* 24px */
+}
+.gamma {
+  font-size:20px;
+  line-height:1.2;    /* 24px */
+}
+.delta {
+  font-size:18px;
+  line-height:1.333;  /* 24px */
+}
+.epsilon {
+  font-size:16px;
+  line-height:1.5;    /* 24px */
+}
+.zeta {
+  font-size:14px;
+  line-height:1.5;    /* 24px */
+}
+
+/* Smaller-than-body-copy sizes here. */
+small,.milli {
+  font-size:14px;
+  line-height: 2;      /* 24px */
 }

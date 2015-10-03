@@ -1,0 +1,491 @@
+//Button variables
+
+$btn-default-color:              #333;
+$btn-default-bg:                 #fff;
+$btn-default-border:             #ccc;
+
+
+$btn-white-color:                #000;
+$btn-white-bg:                   $brand-white;
+$btn-white-border:               $btn-white-bg;
+
+$btn-black-color:                #fff;
+$btn-black-bg:                   $brand-black;
+$btn-black-border:               $btn-black-bg;
+
+$btn-blue-color:                #fff;
+$btn-blue-bg:                   $brand-blue;
+$btn-blue-border:               darken($btn-blue-bg, 5%);
+
+$btn-red-color:                 #fff;
+$btn-red-bg:                    $brand-red;
+$btn-red-border:                darken($btn-red-bg, 5%);
+
+$btn-green-color:               #fff;
+$btn-green-bg:                  $brand-green;
+$btn-green-border:              darken($btn-green-bg, 5%);
+
+$btn-yellow-color:              #fff;
+$btn-yellow-bg:                 $brand-yellow;
+$btn-yellow-border:             darken($btn-yellow-bg, 5%);
+
+$btn-purple-color:              #fff;
+$btn-purple-bg:                 $brand-purple;
+$btn-purple-border:             darken($btn-purple-bg, 5%);
+
+$btn-primary-color:              #fff;
+$btn-primary-bg:                 $brand-primary;
+$btn-primary-border:             darken($btn-primary-bg, 5%);
+
+$btn-success-color:              #fff;
+$btn-success-bg:                 $brand-success;
+$btn-success-border:             darken($btn-success-bg, 5%);
+
+$btn-info-color:                 #fff;
+$btn-info-bg:                    $brand-info;
+$btn-info-border:                darken($btn-info-bg, 5%);
+
+$btn-warning-color:              #fff;
+$btn-warning-bg:                 $brand-warning;
+$btn-warning-border:             darken($btn-warning-bg, 5%);
+
+$btn-danger-color:               #fff;
+$btn-danger-bg:                  $brand-danger;
+$btn-danger-border:              darken($btn-danger-bg, 5%);
+
+$btn-link-disabled-color:        $gray-light;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius-base:         $border-radius-base;
+$btn-border-radius-large:        $border-radius-large;
+$btn-border-radius-small:        $border-radius-small;
+
+// Button variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+
+@mixin button-variant($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:focus,
+  &.focus {
+    color: $color;
+    background-color: darken($background, 10%);
+        border-color: darken($border, 25%);
+  }
+  &:hover {
+    color: $color;
+    background-color: darken($background, 10%);
+        border-color: darken($border, 12%);
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color;
+    background-color: darken($background, 10%);
+        border-color: darken($border, 12%);
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $color;
+      background-color: darken($background, 17%);
+          border-color: darken($border, 25%);
+    }
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: $background;
+          border-color: $border;
+    }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+
+// Button sizes
+@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
+  padding: $padding-vertical $padding-horizontal;
+  font-size: $font-size;
+  line-height: $line-height;
+  border-radius: $border-radius;
+}
+
+// WebKit-style focus
+
+@mixin tab-focus() {
+  // Default
+  outline: thin dotted;
+  // WebKit
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+//
+// Buttons
+// --------------------------------------------------
+
+
+// Base styles
+// --------------------------------------------------
+
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0; // For input.btn
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid transparent;
+  white-space: nowrap;
+  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
+  @include user-select(none);
+
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      @include tab-focus;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: $btn-default-color;
+    text-decoration: none;
+  }
+
+  &:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+    @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: $cursor-disabled;
+    @include opacity(.65);
+    @include box-shadow(none);
+  }
+
+  // [converter] extracted a& to a.btn
+}
+
+a.btn {
+  &.disabled,
+  fieldset[disabled] & {
+    pointer-events: none; // Future-proof disabling of clicks on `<a>` elements
+  }
+}
+
+
+// Alternate buttons
+// --------------------------------------------------
+.btn-blue {
+  @include button-variant($btn-blue-color, $btn-blue-bg, $btn-blue-border);
+}
+.btn-red {
+  @include button-variant($btn-red-color, $btn-red-bg, $btn-red-border);
+}
+.btn-green {
+  @include button-variant($btn-green-color, $btn-green-bg, $btn-green-border);
+}
+.btn-yellow {
+  @include button-variant($btn-yellow-color, $btn-yellow-bg, $btn-yellow-border);
+}
+.btn-purple {
+  @include button-variant($btn-purple-color, $btn-purple-bg, $btn-purple-border);
+}
+.btn-default {
+  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+}
+.btn-primary {
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+}
+// Success appears as green
+.btn-success {
+  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+}
+// Info appears as blue-green
+.btn-info {
+  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+}
+// Warning appears as orange
+.btn-warning {
+  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+}
+// Danger and error appear as red
+.btn-danger {
+  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+}
+
+
+// Link buttons
+// -------------------------
+
+// Make a button look and behave like a link
+.btn-link {
+  color: $link-color;
+  font-weight: normal;
+  border-radius: 0;
+
+  &,
+  &:active,
+  &.active,
+  &[disabled],
+  fieldset[disabled] & {
+    background-color: transparent;
+    @include box-shadow(none);
+  }
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: transparent;
+  }
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+    background-color: transparent;
+  }
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus {
+      color: $btn-link-disabled-color;
+      text-decoration: none;
+    }
+  }
+}
+
+
+// Button Sizes
+// --------------------------------------------------
+
+.btn-lg {
+  // line-height: ensure even-numbered height of button next to large input
+  @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius-large);
+}
+.btn-sm {
+  // line-height: ensure proper height of button next to small input
+  @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
+}
+.btn-xs {
+  @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
+}
+
+// Button mods
+
+.btn-sharp {
+  border-radius: 0;
+}
+// Button outline
+.btn-border {
+  background: none;
+}
+
+.btn-white.btn-border {
+  color: $btn-white-bg;
+  border: 2px solid $btn-white-bg;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    background-color: $btn-white-bg;
+    color: #000;
+    border: 2px solid $btn-white-bg;
+  }
+}
+
+.btn-black.btn-border {
+  color: $btn-black-bg;
+  border: 2px solid $btn-black-bg;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    background-color: $gray-darker;
+    color: #fff;
+    border: 2px solid $gray-darker;
+  }
+}
+.btn-blue.btn-border {
+  color: $btn-blue-bg;
+  border: 2px solid $btn-blue-bg;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    background-color: $btn-blue-bg;
+    color: #fff;
+    border: 2px solid $btn-blue-bg;
+  }
+}
+.btn-red.btn-border {
+  color: $btn-red-bg;
+  border: 2px solid $btn-red-bg;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    background-color: $btn-red-bg;
+    color: #fff;
+    border: 2px solid $btn-red-bg;
+  }
+}
+.btn-green.btn-border {
+  color: $btn-green-bg;
+  border: 2px solid $btn-green-bg;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    background-color: $btn-green-bg;
+    color: #fff;
+    border: 2px solid $btn-green-bg;
+  }
+}
+.btn-yellow.btn-border {
+  color: $btn-yellow-bg;
+  border: 2px solid $btn-yellow-bg;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    background-color: $btn-yellow-bg;
+    color: #fff;
+    border: 2px solid $btn-yellow-bg;
+  }
+}
+.btn-purple.btn-border {
+  color: $btn-purple-bg;
+  border: 2px solid $btn-purple-bg;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    background-color: $btn-purple-bg;
+    color: #fff;
+    border: 2px solid $btn-purple-bg;
+  }
+}
+.btn-default.btn-border {
+  color: $btn-default-bg;
+  border: 2px solid $btn-default-bg;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    background-color: $btn-default-bg;
+    color: #fff;
+    border: 2px solid $btn-default-bg;
+  }
+}
+.btn-primary.btn-border {
+  color: $btn-primary-bg;
+  border: 2px solid $btn-primary-bg;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    background-color: $btn-primary-bg;
+    color: #fff;
+    border: 2px solid $btn-primary-bg;
+  }
+}
+.btn-success.btn-border {
+  color: $btn-success-bg;
+  border: 2px solid $btn-success-bg;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    background-color: $btn-success-bg;
+    color: #fff;
+    border: 2px solid $btn-success-bg;
+  }
+}
+.btn-info.btn-border {
+  color: $btn-info-bg;
+  border: 2px solid $btn-info-bg;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    background-color: $btn-info-bg;
+    color: #fff;
+    border: 2px solid $btn-info-bg;
+  }
+}
+.btn-warning.btn-border {
+  color: $btn-warning-bg;
+  border: 2px solid $btn-warning-bg;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    background-color: $btn-warning-bg;
+    color: #fff;
+    border: 2px solid $btn-warning-bg;
+  }
+}
+.btn-danger.btn-border {
+  color: $btn-danger-bg;
+  border: 2px solid $btn-danger-bg;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    background-color: $btn-danger-bg;
+    color: #fff;
+    border: 2px solid $btn-danger-bg;
+  }
+}
+
+// Block button
+// --------------------------------------------------
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+// Vertically space out multiple block buttons
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}

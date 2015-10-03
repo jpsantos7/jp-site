@@ -29,7 +29,7 @@
   padding: 0;
 }
 
-/* line 68, ../sass/_grid.scss */
+/* line 67, ../sass/_grid.scss */
 .container .column,
 .container .columns {
   float: left;
@@ -53,12 +53,12 @@
 
 /* Nested Column Classes */
 /* line 85, ../sass/_grid.scss */
-.alpha {
+.nest-alpha {
   margin-left: 0;
 }
 
 /* line 88, ../sass/_grid.scss */
-.omega {
+.nest-omega {
   margin-right: 0;
 }
 
@@ -232,7 +232,7 @@
   width: calc((((100% + 2%) / 12) * 12) - 2%);
 }
 
-/* line 225, ../sass/_grid.scss */
+/* line 214, ../sass/_grid.scss */
 .col-1,
 .col-2,
 .col-3,
@@ -247,19 +247,17 @@
 .col-12 {
   float: left;
   display: inline;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-border-radius: 4;
   -moz-border-radius: 4;
-  -ms-border-radius: 4;
-  -o-border-radius: 4;
+  -webkit-border-radius: 4;
   border-radius: 4;
   margin-bottom: 2%;
   margin-top: 2%;
 }
 
-/* line 244, ../sass/_grid.scss */
+/* line 233, ../sass/_grid.scss */
 .col-1-g,
 .col-2-g,
 .col-3-g,
@@ -282,16 +280,14 @@
   margin-left: calc(1%);
   padding: 1em;
   /* background: rgba(255,255,255,.3); */
-  -webkit-border-radius: 4;
   -moz-border-radius: 4;
-  -ms-border-radius: 4;
-  -o-border-radius: 4;
+  -webkit-border-radius: 4;
   border-radius: 4;
   margin-bottom: 2%;
   margin-top: 2%;
   border: 1px solid;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -364,7 +360,7 @@
 /* Note: Design for a width of 320px */
 @media only screen and (max-width: 767px) {
   /* .container { width: 300px; } */
-  /* line 358, ../sass/_grid.scss */
+  /* line 335, ../sass/_grid.scss */
   .col-1-g,
   .col-2-g,
   .col-3-g,
@@ -453,7 +449,7 @@
 
 /* Use clearfix class on parent to clear nested columns,
 or wrap each row of columns in a <div class="row"> */
-/* line 426, ../sass/_grid.scss */
+/* line 423, ../sass/_grid.scss */
 .clearfix:before,
 .clearfix:after,
 .row:before,
@@ -466,13 +462,13 @@ or wrap each row of columns in a <div class="row"> */
   height: 0;
 }
 
-/* line 434, ../sass/_grid.scss */
+/* line 433, ../sass/_grid.scss */
 .row:after,
 .clearfix:after {
   clear: both;
 }
 
-/* line 437, ../sass/_grid.scss */
+/* line 436, ../sass/_grid.scss */
 .row,
 .clearfix {
   zoom: 1;
@@ -504,28 +500,28 @@ or wrap each row of columns in a <div class="row"> */
 * https://github.com/typeplate/typeplate.github.io
 * https://github.com/csswizardry/typecsset
 */
-/* line 135, ../sass/_typesettings.scss */
+/* $font-serif: 'Quattrocento Sans', 'Source Sans Pro', sans-serif !default; */
+/* line 136, ../sass/_typesettings.scss */
 html {
   font-size: 100%;
 }
 
-/* line 139, ../sass/_typesettings.scss */
+/* line 140, ../sass/_typesettings.scss */
 body {
   margin: 0;
   padding: 0;
-  font-family: "Quattrocento Sans", "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  color: #333333;
+  color: #333;
 }
 
-/* line 148, ../sass/_typesettings.scss */
+/* line 149, ../sass/_typesettings.scss */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, h6, .h6, .h5, h6, .h6 {
   margin-top: 0;
   padding: 0 auto;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  text-transform: uppercase;
 }
 
 /* line 161, ../sass/_typesettings.scss */
@@ -534,7 +530,6 @@ h1, .h1 {
   font-size: 1.9994em;
   line-height: 1.12534;
   font-weight: 300;
-  text-align: center;
 }
 @media (min-width: 43.75em) {
   /* line 161, ../sass/_typesettings.scss */
@@ -553,15 +548,14 @@ h1, .h1 {
   }
 }
 
-/* line 179, ../sass/_typesettings.scss */
+/* line 178, ../sass/_typesettings.scss */
 h2, .h2 {
   margin-bottom: 1.06082em;
   font-size: 1.414em;
   line-height: 1.32603;
-  font-weight: 400;
 }
 @media (min-width: 43.75em) {
-  /* line 179, ../sass/_typesettings.scss */
+  /* line 178, ../sass/_typesettings.scss */
   h2, .h2 {
     margin-bottom: 0.75023em;
     font-size: 1.9994em;
@@ -569,7 +563,7 @@ h2, .h2 {
   }
 }
 @media (min-width: 56.25em) {
-  /* line 179, ../sass/_typesettings.scss */
+  /* line 178, ../sass/_typesettings.scss */
   h2, .h2 {
     margin-bottom: 0.53057em;
     font-size: 2.82715em;
@@ -577,15 +571,14 @@ h2, .h2 {
   }
 }
 
-/* line 195, ../sass/_typesettings.scss */
+/* line 193, ../sass/_typesettings.scss */
 h3, .h3 {
   margin-bottom: 1.06082em;
   font-size: 1.414em;
   line-height: 1.32603;
-  font-weight: 600;
 }
 @media (min-width: 56.25em) {
-  /* line 195, ../sass/_typesettings.scss */
+  /* line 193, ../sass/_typesettings.scss */
   h3, .h3 {
     margin-bottom: 0.75023em;
     font-size: 1.9994em;
@@ -593,23 +586,21 @@ h3, .h3 {
   }
 }
 
-/* line 206, ../sass/_typesettings.scss */
+/* line 203, ../sass/_typesettings.scss */
 h4, .h4 {
   margin-bottom: 1.06082em;
   font-size: 1.414em;
   line-height: 1.32603;
-  font-weight: 700;
 }
 
-/* line 212, ../sass/_typesettings.scss */
+/* line 208, ../sass/_typesettings.scss */
 h5, h6, .h6, .h5 {
   margin-bottom: 1.5em;
   font-size: 1em;
   line-height: 1.5;
-  font-weight: 900;
 }
 
-/* line 222, ../sass/_typesettings.scss */
+/* line 217, ../sass/_typesettings.scss */
 p {
   margin-top: 0;
   padding: 0 auto;
@@ -624,7 +615,7 @@ p {
   margin-bottom: 1.5em;
 }
 @media (min-width: 43.75em) {
-  /* line 222, ../sass/_typesettings.scss */
+  /* line 217, ../sass/_typesettings.scss */
   p {
     text-align: justify;
   }
@@ -637,23 +628,23 @@ p {
   }
 }
  */
-/* line 249, ../sass/_typesettings.scss */
+/* line 244, ../sass/_typesettings.scss */
 small, .font-small {
   font-size: 0.70721em;
   line-height: 1.59075;
 }
 
-/* line 253, ../sass/_typesettings.scss */
+/* line 248, ../sass/_typesettings.scss */
 em {
   font-style: italic;
 }
 
-/* line 257, ../sass/_typesettings.scss */
+/* line 252, ../sass/_typesettings.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 261, ../sass/_typesettings.scss */
+/* line 256, ../sass/_typesettings.scss */
 blockquote {
   padding: 0 auto;
   font-family: "Lucida Console", Monaco, monospace;
@@ -664,22 +655,22 @@ blockquote {
   margin-left: -1.875em;
   border-left: 6px solid gray;
 }
-/* line 273, ../sass/_typesettings.scss */
+/* line 268, ../sass/_typesettings.scss */
 blockquote footer cite:before {
   content: " – ";
 }
 
-/* line 280, ../sass/_typesettings.scss */
+/* line 275, ../sass/_typesettings.scss */
 pre, code {
   font-family: "Lucida Console", Monaco, monospace;
 }
 
-/* line 284, ../sass/_typesettings.scss */
+/* line 279, ../sass/_typesettings.scss */
 time, .time {
   text-transform: uppercase;
 }
 
-/* line 288, ../sass/_typesettings.scss */
+/* line 283, ../sass/_typesettings.scss */
 ol, ul {
   margin-top: 0;
   padding: 0 auto;
@@ -687,284 +678,1367 @@ ol, ul {
   margin-left: 1.5em;
 }
 
-/* line 295, ../sass/_typesettings.scss */
+/* line 290, ../sass/_typesettings.scss */
 ul {
   list-style: disc;
 }
-/* line 298, ../sass/_typesettings.scss */
+/* line 293, ../sass/_typesettings.scss */
 ul ul {
   margin-bottom: 0;
 }
 
-/* line 305, ../sass/_typesettings.scss */
+/* line 300, ../sass/_typesettings.scss */
 ol ol {
   margin-bottom: 0;
 }
 
-/* line 310, ../sass/_typesettings.scss */
+/* line 305, ../sass/_typesettings.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 314, ../sass/_typesettings.scss */
+/* line 309, ../sass/_typesettings.scss */
 abbr {
   font-variant: small-caps;
   font-weight: 600;
   text-transform: lowercase;
 }
 
-/* line 320, ../sass/_typesettings.scss */
+/* line 315, ../sass/_typesettings.scss */
 abbr[title]:hover {
   cursor: help;
 }
 
-/* Entypo font declaration */
-@font-face {
-  font-family: 'EntypoSocialRegular';
-  src: url("font/entypo-social.svg#EntypoRegular") format("svg");
+/* line 319, ../sass/_typesettings.scss */
+.serif {
+  font-family: "Alegreya", sans-serif !important;
+}
+
+/* line 324, ../sass/_typesettings.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 325, ../sass/_typesettings.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 326, ../sass/_typesettings.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 327, ../sass/_typesettings.scss */
+.text-justify {
+  text-align: justify;
+}
+
+/* line 328, ../sass/_typesettings.scss */
+.text-nowrap {
+  white-space: nowrap;
+}
+
+/* line 331, ../sass/_typesettings.scss */
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+/* line 332, ../sass/_typesettings.scss */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* line 333, ../sass/_typesettings.scss */
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+/* These handle massive type, for less frequently occuring bits of text (e.g. in mastheads and banners). */
+/* line 336, ../sass/_typesettings.scss */
+.giga {
+  font-size: 80px;
+  line-height: 1.2;
+  /* 96px */
+}
+
+/* line 340, ../sass/_typesettings.scss */
+.mega {
+  font-size: 64px;
+  line-height: 1.125;
+  /* 72px */
+}
+
+/* line 344, ../sass/_typesettings.scss */
+.kilo {
+  font-size: 48px;
+  line-height: 1;
+  /* 48px */
+}
+
+/* Define headings and their associated classes here. */
+/* line 350, ../sass/_typesettings.scss */
+.alpha {
+  font-size: 32px;
+  line-height: 1.5;
+  /* 48px */
+}
+
+/* line 354, ../sass/_typesettings.scss */
+.beta {
+  font-size: 24px;
+  /* 24px */
+  line-height: 1;
+  /* 24px */
+}
+
+/* line 358, ../sass/_typesettings.scss */
+.gamma {
+  font-size: 20px;
+  line-height: 1.2;
+  /* 24px */
+}
+
+/* line 362, ../sass/_typesettings.scss */
+.delta {
+  font-size: 18px;
+  line-height: 1.333;
+  /* 24px */
+}
+
+/* line 366, ../sass/_typesettings.scss */
+.epsilon {
+  font-size: 16px;
+  line-height: 1.5;
+  /* 24px */
+}
+
+/* line 370, ../sass/_typesettings.scss */
+.zeta {
+  font-size: 14px;
+  line-height: 1.5;
+  /* 24px */
+}
+
+/* Smaller-than-body-copy sizes here. */
+/* line 376, ../sass/_typesettings.scss */
+small, .milli {
+  font-size: 14px;
+  line-height: 2;
+  /* 24px */
+}
+
+/* line 13, ../sass/_spaces.scss */
+.last-col {
+  overflow: hidden !important;
+}
+
+/* line 16, ../sass/_spaces.scss */
+.pdn {
+  padding: 0 !important;
+}
+
+/* line 19, ../sass/_spaces.scss */
+.pdx {
+  padding: 3px;
+}
+
+/* line 22, ../sass/_spaces.scss */
+.pdm {
+  padding: 10px;
+}
+
+/* line 25, ../sass/_spaces.scss */
+.pdl {
+  padding: 20px;
+}
+
+/* line 28, ../sass/_spaces.scss */
+.pdxl {
+  padding: 30px;
+}
+
+/* line 31, ../sass/_spaces.scss */
+.pdxxl {
+  padding: 40px;
+}
+
+/* line 34, ../sass/_spaces.scss */
+.ptn, .pvn, .pan {
+  padding-top: 0 !important;
+}
+
+/* line 38, ../sass/_spaces.scss */
+.ptx, .pvx, .pax {
+  padding-top: 3px !important;
+}
+
+/* line 42, ../sass/_spaces.scss */
+.pts, .pvs, .pas {
+  padding-top: 5px !important;
+}
+
+/* line 46, ../sass/_spaces.scss */
+.ptm, .pvm, .pam {
+  padding-top: 10px !important;
+}
+
+/* line 50, ../sass/_spaces.scss */
+.ptl, .pvl, .pal {
+  padding-top: 20px !important;
+}
+
+/* line 53, ../sass/_spaces.scss */
+.ptxl, .pvxl, .paxl {
+  padding-top: 30px !important;
+}
+
+/* line 56, ../sass/_spaces.scss */
+.ptxxl, .pvxxl, .paxxl {
+  padding-top: 40px !important;
+}
+
+/* line 60, ../sass/_spaces.scss */
+.prn, .phn, .pan {
+  padding-right: 0 !important;
+}
+
+/* line 64, ../sass/_spaces.scss */
+.prx, .phx, .pax {
+  padding-right: 3px !important;
+}
+
+/* line 68, ../sass/_spaces.scss */
+.prs, .phs, .pas {
+  padding-right: 5px !important;
+}
+
+/* line 72, ../sass/_spaces.scss */
+.prm, .phm, .pam {
+  padding-right: 10px !important;
+}
+
+/* line 76, ../sass/_spaces.scss */
+.prl, .phl, .pal {
+  padding-right: 20px !important;
+}
+
+/* line 79, ../sass/_spaces.scss */
+.prxl, .phxl, .paxl {
+  padding-right: 30px !important;
+}
+
+/* line 82, ../sass/_spaces.scss */
+.prxxl, .phxxl, .paxxl {
+  padding-right: 40px !important;
+}
+
+/* line 86, ../sass/_spaces.scss */
+.pbn, .pvn, .pan {
+  padding-bottom: 0 !important;
+}
+
+/* line 90, ../sass/_spaces.scss */
+.pbx, .pvx, .pax {
+  padding-bottom: 3px !important;
+}
+
+/* line 94, ../sass/_spaces.scss */
+.pbs, .pvs, .pas {
+  padding-bottom: 5px !important;
+}
+
+/* line 98, ../sass/_spaces.scss */
+.pbm, .pvm, .pam {
+  padding-bottom: 10px !important;
+}
+
+/* line 102, ../sass/_spaces.scss */
+.pbl, .pvl, .pal {
+  padding-bottom: 20px !important;
+}
+
+/* line 105, ../sass/_spaces.scss */
+.pbxl, .pvxl, .paxl {
+  padding-bottom: 30px !important;
+}
+
+/* line 108, ../sass/_spaces.scss */
+.pbxxl, .pvxxl, .paxxl {
+  padding-bottom: 40px !important;
+}
+
+/* line 112, ../sass/_spaces.scss */
+.pln, .phn, .pan {
+  padding-left: 0 !important;
+}
+
+/* line 116, ../sass/_spaces.scss */
+.plx, .phx, .pax {
+  padding-left: 3px !important;
+}
+
+/* line 120, ../sass/_spaces.scss */
+.pls, .phs, .pas {
+  padding-left: 5px !important;
+}
+
+/* line 124, ../sass/_spaces.scss */
+.plm, .phm, .pam {
+  padding-left: 10px !important;
+}
+
+/* line 128, ../sass/_spaces.scss */
+.pll, .phl, .pal {
+  padding-left: 20px !important;
+}
+
+/* line 131, ../sass/_spaces.scss */
+.plxl, .phxl, .paxl {
+  padding-left: 30px !important;
+}
+
+/* line 134, ../sass/_spaces.scss */
+.plxxl, .phxxl, .paxxl {
+  padding-left: 40px !important;
+}
+
+/* line 138, ../sass/_spaces.scss */
+.mtn, .mvn, .man {
+  margin-top: 0px !important;
+}
+
+/* line 142, ../sass/_spaces.scss */
+.mtx, .mvx, .max {
+  margin-top: 3px !important;
+}
+
+/* line 146, ../sass/_spaces.scss */
+.mts, .mvs, .mas {
+  margin-top: 5px !important;
+}
+
+/* line 150, ../sass/_spaces.scss */
+.mtm, .mvm, .mam {
+  margin-top: 10px !important;
+}
+
+/* line 154, ../sass/_spaces.scss */
+.mtl, .mvl, .mal {
+  margin-top: 20px !important;
+}
+
+/* line 157, ../sass/_spaces.scss */
+.mtxl, .mvxl, .maxl {
+  margin-top: 30px !important;
+}
+
+/* line 160, ../sass/_spaces.scss */
+.mtxxl, .mvxxl, .maxxl {
+  margin-top: 40px !important;
+}
+
+/* line 164, ../sass/_spaces.scss */
+.mrn, .mhn, .man {
+  margin-right: 0px !important;
+}
+
+/* line 168, ../sass/_spaces.scss */
+.mrx, .mhx, .max {
+  margin-right: 3px !important;
+}
+
+/* line 172, ../sass/_spaces.scss */
+.mrs, .mhs, .mas {
+  margin-right: 5px !important;
+}
+
+/* line 176, ../sass/_spaces.scss */
+.mrm, .mhm, .mam {
+  margin-right: 10px !important;
+}
+
+/* line 180, ../sass/_spaces.scss */
+.mrl, .mhl, .mal {
+  margin-right: 20px !important;
+}
+
+/* line 183, ../sass/_spaces.scss */
+.mrxl, .mhxl, .maxl {
+  margin-right: 30px !important;
+}
+
+/* line 186, ../sass/_spaces.scss */
+.mrxxl, .mhxxl, .maxxl {
+  margin-right: 40px !important;
+}
+
+/* line 190, ../sass/_spaces.scss */
+.mbn, .mvn, .man {
+  margin-bottom: 0px !important;
+}
+
+/* line 194, ../sass/_spaces.scss */
+.mbx, .mvx, .max {
+  margin-bottom: 3px !important;
+}
+
+/* line 198, ../sass/_spaces.scss */
+.mbs, .mvs, .mas {
+  margin-bottom: 5px !important;
+}
+
+/* line 202, ../sass/_spaces.scss */
+.mbm, .mvm, .mam {
+  margin-bottom: 10px !important;
+}
+
+/* line 206, ../sass/_spaces.scss */
+.mbl, .mvl, .mal {
+  margin-bottom: 20px !important;
+}
+
+/* line 209, ../sass/_spaces.scss */
+.mbxl, .mvxl, .maxl {
+  margin-bottom: 30px !important;
+}
+
+/* line 212, ../sass/_spaces.scss */
+.mbxxl, .mvxxl, .maxxl {
+  margin-bottom: 40px !important;
+}
+
+/* line 216, ../sass/_spaces.scss */
+.mln, .mhn, .man {
+  margin-left: 0px !important;
+}
+
+/* line 220, ../sass/_spaces.scss */
+.mlx, .mhx, .max {
+  margin-left: 3px !important;
+}
+
+/* line 224, ../sass/_spaces.scss */
+.mls, .mhs, .mas {
+  margin-left: 5px !important;
+}
+
+/* line 228, ../sass/_spaces.scss */
+.mlm, .mhm, .mam {
+  margin-left: 10px !important;
+}
+
+/* line 232, ../sass/_spaces.scss */
+.mll, .mhl, .mal {
+  margin-left: 20px !important;
+}
+
+/* line 235, ../sass/_spaces.scss */
+.mlxl, .mhxl, .maxl {
+  margin-left: 30px !important;
+}
+
+/* line 238, ../sass/_spaces.scss */
+.mlxxl, .mhxxl, .maxxl {
+  margin-left: 40px !important;
+}
+
+/* line 151, ../sass/_buttons.scss */
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
   font-weight: normal;
-  font-style: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  border-radius: 4px;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+/* line 168, ../sass/_buttons.scss */
+.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+/* line 174, ../sass/_buttons.scss */
+.btn:hover, .btn:focus, .btn.focus {
+  color: #333;
+  text-decoration: none;
+}
+/* line 181, ../sass/_buttons.scss */
+.btn:active, .btn.active {
+  outline: 0;
+  background-image: none;
+  -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+/* line 188, ../sass/_buttons.scss */
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+  cursor: not-allowed;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
+  opacity: 0.65;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
-/* line 9, ../sass/_entypo-font.scss */
-.entypo-social {
-  font-family: 'EntypoSocialRegular';
-  font-size: 2em;
+/* line 200, ../sass/_buttons.scss */
+a.btn.disabled, fieldset[disabled] a.btn {
+  pointer-events: none;
+}
+
+/* line 209, ../sass/_buttons.scss */
+.btn-blue {
+  color: #fff;
+  background-color: #2196f3;
+  border-color: #0d8aee;
+}
+/* line 73, ../sass/_buttons.scss */
+.btn-blue:focus, .btn-blue.focus {
+  color: #fff;
+  background-color: #0c7cd5;
+  border-color: #064475;
+}
+/* line 79, ../sass/_buttons.scss */
+.btn-blue:hover {
+  color: #fff;
+  background-color: #0c7cd5;
+  border-color: #0a68b4;
+}
+/* line 84, ../sass/_buttons.scss */
+.btn-blue:active, .btn-blue.active, .open > .btn-blue.dropdown-toggle {
+  color: #fff;
+  background-color: #0c7cd5;
+  border-color: #0a68b4;
+}
+/* line 91, ../sass/_buttons.scss */
+.btn-blue:active:hover, .btn-blue:active:focus, .btn-blue:active.focus, .btn-blue.active:hover, .btn-blue.active:focus, .btn-blue.active.focus, .open > .btn-blue.dropdown-toggle:hover, .open > .btn-blue.dropdown-toggle:focus, .open > .btn-blue.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #0a68b4;
+  border-color: #064475;
+}
+/* line 99, ../sass/_buttons.scss */
+.btn-blue:active, .btn-blue.active, .open > .btn-blue.dropdown-toggle {
+  background-image: none;
+}
+/* line 107, ../sass/_buttons.scss */
+.btn-blue.disabled, .btn-blue.disabled:hover, .btn-blue.disabled:focus, .btn-blue.disabled.focus, .btn-blue.disabled:active, .btn-blue.disabled.active, .btn-blue[disabled], .btn-blue[disabled]:hover, .btn-blue[disabled]:focus, .btn-blue[disabled].focus, .btn-blue[disabled]:active, .btn-blue[disabled].active, fieldset[disabled] .btn-blue, fieldset[disabled] .btn-blue:hover, fieldset[disabled] .btn-blue:focus, fieldset[disabled] .btn-blue.focus, fieldset[disabled] .btn-blue:active, fieldset[disabled] .btn-blue.active {
+  background-color: #2196f3;
+  border-color: #0d8aee;
+}
+/* line 118, ../sass/_buttons.scss */
+.btn-blue .badge {
+  color: #2196f3;
+  background-color: #fff;
+}
+
+/* line 212, ../sass/_buttons.scss */
+.btn-red {
+  color: #fff;
+  background-color: #f44336;
+  border-color: #f32c1e;
+}
+/* line 73, ../sass/_buttons.scss */
+.btn-red:focus, .btn-red.focus {
+  color: #fff;
+  background-color: #ea1c0d;
+  border-color: #891008;
+}
+/* line 79, ../sass/_buttons.scss */
+.btn-red:hover {
+  color: #fff;
+  background-color: #ea1c0d;
+  border-color: #c8180b;
+}
+/* line 84, ../sass/_buttons.scss */
+.btn-red:active, .btn-red.active, .open > .btn-red.dropdown-toggle {
+  color: #fff;
+  background-color: #ea1c0d;
+  border-color: #c8180b;
+}
+/* line 91, ../sass/_buttons.scss */
+.btn-red:active:hover, .btn-red:active:focus, .btn-red:active.focus, .btn-red.active:hover, .btn-red.active:focus, .btn-red.active.focus, .open > .btn-red.dropdown-toggle:hover, .open > .btn-red.dropdown-toggle:focus, .open > .btn-red.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #c8180b;
+  border-color: #891008;
+}
+/* line 99, ../sass/_buttons.scss */
+.btn-red:active, .btn-red.active, .open > .btn-red.dropdown-toggle {
+  background-image: none;
+}
+/* line 107, ../sass/_buttons.scss */
+.btn-red.disabled, .btn-red.disabled:hover, .btn-red.disabled:focus, .btn-red.disabled.focus, .btn-red.disabled:active, .btn-red.disabled.active, .btn-red[disabled], .btn-red[disabled]:hover, .btn-red[disabled]:focus, .btn-red[disabled].focus, .btn-red[disabled]:active, .btn-red[disabled].active, fieldset[disabled] .btn-red, fieldset[disabled] .btn-red:hover, fieldset[disabled] .btn-red:focus, fieldset[disabled] .btn-red.focus, fieldset[disabled] .btn-red:active, fieldset[disabled] .btn-red.active {
+  background-color: #f44336;
+  border-color: #f32c1e;
+}
+/* line 118, ../sass/_buttons.scss */
+.btn-red .badge {
+  color: #f44336;
+  background-color: #fff;
+}
+
+/* line 215, ../sass/_buttons.scss */
+.btn-green {
+  color: #fff;
+  background-color: #4caf50;
+  border-color: #449d48;
+}
+/* line 73, ../sass/_buttons.scss */
+.btn-green:focus, .btn-green.focus {
+  color: #fff;
+  background-color: #3d8b40;
+  border-color: #1e441f;
+}
+/* line 79, ../sass/_buttons.scss */
+.btn-green:hover {
+  color: #fff;
+  background-color: #3d8b40;
+  border-color: #327334;
+}
+/* line 84, ../sass/_buttons.scss */
+.btn-green:active, .btn-green.active, .open > .btn-green.dropdown-toggle {
+  color: #fff;
+  background-color: #3d8b40;
+  border-color: #327334;
+}
+/* line 91, ../sass/_buttons.scss */
+.btn-green:active:hover, .btn-green:active:focus, .btn-green:active.focus, .btn-green.active:hover, .btn-green.active:focus, .btn-green.active.focus, .open > .btn-green.dropdown-toggle:hover, .open > .btn-green.dropdown-toggle:focus, .open > .btn-green.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #327334;
+  border-color: #1e441f;
+}
+/* line 99, ../sass/_buttons.scss */
+.btn-green:active, .btn-green.active, .open > .btn-green.dropdown-toggle {
+  background-image: none;
+}
+/* line 107, ../sass/_buttons.scss */
+.btn-green.disabled, .btn-green.disabled:hover, .btn-green.disabled:focus, .btn-green.disabled.focus, .btn-green.disabled:active, .btn-green.disabled.active, .btn-green[disabled], .btn-green[disabled]:hover, .btn-green[disabled]:focus, .btn-green[disabled].focus, .btn-green[disabled]:active, .btn-green[disabled].active, fieldset[disabled] .btn-green, fieldset[disabled] .btn-green:hover, fieldset[disabled] .btn-green:focus, fieldset[disabled] .btn-green.focus, fieldset[disabled] .btn-green:active, fieldset[disabled] .btn-green.active {
+  background-color: #4caf50;
+  border-color: #449d48;
+}
+/* line 118, ../sass/_buttons.scss */
+.btn-green .badge {
+  color: #4caf50;
+  background-color: #fff;
+}
+
+/* line 218, ../sass/_buttons.scss */
+.btn-yellow {
+  color: #fff;
+  background-color: #ffeb3b;
+  border-color: #ffe822;
+}
+/* line 73, ../sass/_buttons.scss */
+.btn-yellow:focus, .btn-yellow.focus {
+  color: #fff;
+  background-color: #ffe608;
+  border-color: #a19100;
+}
+/* line 79, ../sass/_buttons.scss */
+.btn-yellow:hover {
+  color: #fff;
+  background-color: #ffe608;
+  border-color: #e3cc00;
+}
+/* line 84, ../sass/_buttons.scss */
+.btn-yellow:active, .btn-yellow.active, .open > .btn-yellow.dropdown-toggle {
+  color: #fff;
+  background-color: #ffe608;
+  border-color: #e3cc00;
+}
+/* line 91, ../sass/_buttons.scss */
+.btn-yellow:active:hover, .btn-yellow:active:focus, .btn-yellow:active.focus, .btn-yellow.active:hover, .btn-yellow.active:focus, .btn-yellow.active.focus, .open > .btn-yellow.dropdown-toggle:hover, .open > .btn-yellow.dropdown-toggle:focus, .open > .btn-yellow.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #e3cc00;
+  border-color: #a19100;
+}
+/* line 99, ../sass/_buttons.scss */
+.btn-yellow:active, .btn-yellow.active, .open > .btn-yellow.dropdown-toggle {
+  background-image: none;
+}
+/* line 107, ../sass/_buttons.scss */
+.btn-yellow.disabled, .btn-yellow.disabled:hover, .btn-yellow.disabled:focus, .btn-yellow.disabled.focus, .btn-yellow.disabled:active, .btn-yellow.disabled.active, .btn-yellow[disabled], .btn-yellow[disabled]:hover, .btn-yellow[disabled]:focus, .btn-yellow[disabled].focus, .btn-yellow[disabled]:active, .btn-yellow[disabled].active, fieldset[disabled] .btn-yellow, fieldset[disabled] .btn-yellow:hover, fieldset[disabled] .btn-yellow:focus, fieldset[disabled] .btn-yellow.focus, fieldset[disabled] .btn-yellow:active, fieldset[disabled] .btn-yellow.active {
+  background-color: #ffeb3b;
+  border-color: #ffe822;
+}
+/* line 118, ../sass/_buttons.scss */
+.btn-yellow .badge {
+  color: #ffeb3b;
+  background-color: #fff;
+}
+
+/* line 221, ../sass/_buttons.scss */
+.btn-purple {
+  color: #fff;
+  background-color: #9c27b0;
+  border-color: #89229b;
+}
+/* line 73, ../sass/_buttons.scss */
+.btn-purple:focus, .btn-purple.focus {
+  color: #fff;
+  background-color: #771e86;
+  border-color: #2d0b33;
+}
+/* line 79, ../sass/_buttons.scss */
+.btn-purple:hover {
+  color: #fff;
+  background-color: #771e86;
+  border-color: #5d1769;
+}
+/* line 84, ../sass/_buttons.scss */
+.btn-purple:active, .btn-purple.active, .open > .btn-purple.dropdown-toggle {
+  color: #fff;
+  background-color: #771e86;
+  border-color: #5d1769;
+}
+/* line 91, ../sass/_buttons.scss */
+.btn-purple:active:hover, .btn-purple:active:focus, .btn-purple:active.focus, .btn-purple.active:hover, .btn-purple.active:focus, .btn-purple.active.focus, .open > .btn-purple.dropdown-toggle:hover, .open > .btn-purple.dropdown-toggle:focus, .open > .btn-purple.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #5d1769;
+  border-color: #2d0b33;
+}
+/* line 99, ../sass/_buttons.scss */
+.btn-purple:active, .btn-purple.active, .open > .btn-purple.dropdown-toggle {
+  background-image: none;
+}
+/* line 107, ../sass/_buttons.scss */
+.btn-purple.disabled, .btn-purple.disabled:hover, .btn-purple.disabled:focus, .btn-purple.disabled.focus, .btn-purple.disabled:active, .btn-purple.disabled.active, .btn-purple[disabled], .btn-purple[disabled]:hover, .btn-purple[disabled]:focus, .btn-purple[disabled].focus, .btn-purple[disabled]:active, .btn-purple[disabled].active, fieldset[disabled] .btn-purple, fieldset[disabled] .btn-purple:hover, fieldset[disabled] .btn-purple:focus, fieldset[disabled] .btn-purple.focus, fieldset[disabled] .btn-purple:active, fieldset[disabled] .btn-purple.active {
+  background-color: #9c27b0;
+  border-color: #89229b;
+}
+/* line 118, ../sass/_buttons.scss */
+.btn-purple .badge {
+  color: #9c27b0;
+  background-color: #fff;
+}
+
+/* line 224, ../sass/_buttons.scss */
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+/* line 73, ../sass/_buttons.scss */
+.btn-default:focus, .btn-default.focus {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #8c8c8c;
+}
+/* line 79, ../sass/_buttons.scss */
+.btn-default:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+/* line 84, ../sass/_buttons.scss */
+.btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+/* line 91, ../sass/_buttons.scss */
+.btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus, .open > .btn-default.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle.focus {
+  color: #333;
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
+/* line 99, ../sass/_buttons.scss */
+.btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+  background-image: none;
+}
+/* line 107, ../sass/_buttons.scss */
+.btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled.focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled].focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {
+  background-color: #fff;
+  border-color: #ccc;
+}
+/* line 118, ../sass/_buttons.scss */
+.btn-default .badge {
+  color: #fff;
+  background-color: #333;
+}
+
+/* line 227, ../sass/_buttons.scss */
+.btn-primary {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+/* line 73, ../sass/_buttons.scss */
+.btn-primary:focus, .btn-primary.focus {
+  color: #fff;
+  background-color: #286090;
+  border-color: #122b40;
+}
+/* line 79, ../sass/_buttons.scss */
+.btn-primary:hover {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+/* line 84, ../sass/_buttons.scss */
+.btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+/* line 91, ../sass/_buttons.scss */
+.btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #204d74;
+  border-color: #122b40;
+}
+/* line 99, ../sass/_buttons.scss */
+.btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+  background-image: none;
+}
+/* line 107, ../sass/_buttons.scss */
+.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+/* line 118, ../sass/_buttons.scss */
+.btn-primary .badge {
+  color: #337ab7;
+  background-color: #fff;
+}
+
+/* line 231, ../sass/_buttons.scss */
+.btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+/* line 73, ../sass/_buttons.scss */
+.btn-success:focus, .btn-success.focus {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #255625;
+}
+/* line 79, ../sass/_buttons.scss */
+.btn-success:hover {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+/* line 84, ../sass/_buttons.scss */
+.btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+/* line 91, ../sass/_buttons.scss */
+.btn-success:active:hover, .btn-success:active:focus, .btn-success:active.focus, .btn-success.active:hover, .btn-success.active:focus, .btn-success.active.focus, .open > .btn-success.dropdown-toggle:hover, .open > .btn-success.dropdown-toggle:focus, .open > .btn-success.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #398439;
+  border-color: #255625;
+}
+/* line 99, ../sass/_buttons.scss */
+.btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
+  background-image: none;
+}
+/* line 107, ../sass/_buttons.scss */
+.btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled.focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled].focus, .btn-success[disabled]:active, .btn-success[disabled].active, fieldset[disabled] .btn-success, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success.focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success.active {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+/* line 118, ../sass/_buttons.scss */
+.btn-success .badge {
+  color: #5cb85c;
+  background-color: #fff;
+}
+
+/* line 235, ../sass/_buttons.scss */
+.btn-info {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+/* line 73, ../sass/_buttons.scss */
+.btn-info:focus, .btn-info.focus {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #1b6d85;
+}
+/* line 79, ../sass/_buttons.scss */
+.btn-info:hover {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+/* line 84, ../sass/_buttons.scss */
+.btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+/* line 91, ../sass/_buttons.scss */
+.btn-info:active:hover, .btn-info:active:focus, .btn-info:active.focus, .btn-info.active:hover, .btn-info.active:focus, .btn-info.active.focus, .open > .btn-info.dropdown-toggle:hover, .open > .btn-info.dropdown-toggle:focus, .open > .btn-info.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #269abc;
+  border-color: #1b6d85;
+}
+/* line 99, ../sass/_buttons.scss */
+.btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle {
+  background-image: none;
+}
+/* line 107, ../sass/_buttons.scss */
+.btn-info.disabled, .btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled.focus, .btn-info.disabled:active, .btn-info.disabled.active, .btn-info[disabled], .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled].focus, .btn-info[disabled]:active, .btn-info[disabled].active, fieldset[disabled] .btn-info, fieldset[disabled] .btn-info:hover, fieldset[disabled] .btn-info:focus, fieldset[disabled] .btn-info.focus, fieldset[disabled] .btn-info:active, fieldset[disabled] .btn-info.active {
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+/* line 118, ../sass/_buttons.scss */
+.btn-info .badge {
+  color: #5bc0de;
+  background-color: #fff;
+}
+
+/* line 239, ../sass/_buttons.scss */
+.btn-warning {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+/* line 73, ../sass/_buttons.scss */
+.btn-warning:focus, .btn-warning.focus {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #985f0d;
+}
+/* line 79, ../sass/_buttons.scss */
+.btn-warning:hover {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+/* line 84, ../sass/_buttons.scss */
+.btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+/* line 91, ../sass/_buttons.scss */
+.btn-warning:active:hover, .btn-warning:active:focus, .btn-warning:active.focus, .btn-warning.active:hover, .btn-warning.active:focus, .btn-warning.active.focus, .open > .btn-warning.dropdown-toggle:hover, .open > .btn-warning.dropdown-toggle:focus, .open > .btn-warning.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #d58512;
+  border-color: #985f0d;
+}
+/* line 99, ../sass/_buttons.scss */
+.btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle {
+  background-image: none;
+}
+/* line 107, ../sass/_buttons.scss */
+.btn-warning.disabled, .btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled.focus, .btn-warning.disabled:active, .btn-warning.disabled.active, .btn-warning[disabled], .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled].focus, .btn-warning[disabled]:active, .btn-warning[disabled].active, fieldset[disabled] .btn-warning, fieldset[disabled] .btn-warning:hover, fieldset[disabled] .btn-warning:focus, fieldset[disabled] .btn-warning.focus, fieldset[disabled] .btn-warning:active, fieldset[disabled] .btn-warning.active {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+/* line 118, ../sass/_buttons.scss */
+.btn-warning .badge {
+  color: #f0ad4e;
+  background-color: #fff;
+}
+
+/* line 243, ../sass/_buttons.scss */
+.btn-danger {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+/* line 73, ../sass/_buttons.scss */
+.btn-danger:focus, .btn-danger.focus {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #761c19;
+}
+/* line 79, ../sass/_buttons.scss */
+.btn-danger:hover {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+/* line 84, ../sass/_buttons.scss */
+.btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+/* line 91, ../sass/_buttons.scss */
+.btn-danger:active:hover, .btn-danger:active:focus, .btn-danger:active.focus, .btn-danger.active:hover, .btn-danger.active:focus, .btn-danger.active.focus, .open > .btn-danger.dropdown-toggle:hover, .open > .btn-danger.dropdown-toggle:focus, .open > .btn-danger.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #ac2925;
+  border-color: #761c19;
+}
+/* line 99, ../sass/_buttons.scss */
+.btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
+  background-image: none;
+}
+/* line 107, ../sass/_buttons.scss */
+.btn-danger.disabled, .btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled.focus, .btn-danger.disabled:active, .btn-danger.disabled.active, .btn-danger[disabled], .btn-danger[disabled]:hover, .btn-danger[disabled]:focus, .btn-danger[disabled].focus, .btn-danger[disabled]:active, .btn-danger[disabled].active, fieldset[disabled] .btn-danger, fieldset[disabled] .btn-danger:hover, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger.focus, fieldset[disabled] .btn-danger:active, fieldset[disabled] .btn-danger.active {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+/* line 118, ../sass/_buttons.scss */
+.btn-danger .badge {
+  color: #d9534f;
+  background-color: #fff;
+}
+
+/* line 252, ../sass/_buttons.scss */
+.btn-link {
+  color: #337ab7;
   font-weight: normal;
-  line-height: 0;
+  border-radius: 0;
+}
+/* line 257, ../sass/_buttons.scss */
+.btn-link, .btn-link:active, .btn-link.active, .btn-link[disabled], fieldset[disabled] .btn-link {
+  background-color: transparent;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 265, ../sass/_buttons.scss */
+.btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
+  border-color: transparent;
+}
+/* line 271, ../sass/_buttons.scss */
+.btn-link:hover, .btn-link:focus {
+  color: #23527c;
+  text-decoration: underline;
+  background-color: transparent;
+}
+/* line 279, ../sass/_buttons.scss */
+.btn-link[disabled]:hover, .btn-link[disabled]:focus, fieldset[disabled] .btn-link:hover, fieldset[disabled] .btn-link:focus {
+  color: #777777;
+  text-decoration: none;
 }
 
-/* line 16, ../sass/_entypo-font.scss */
-.entypo-social.github:before {
-  content: '\F300';
+/* line 291, ../sass/_buttons.scss */
+.btn-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33333;
+  border-radius: 6px;
 }
 
-/* line 17, ../sass/_entypo-font.scss */
-.entypo-social.c-github:before {
-  content: '\F301';
+/* line 295, ../sass/_buttons.scss */
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
 }
 
-/* line 18, ../sass/_entypo-font.scss */
-.entypo-social.flickr:before {
-  content: '\F303';
+/* line 299, ../sass/_buttons.scss */
+.btn-xs {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
 }
 
-/* line 19, ../sass/_entypo-font.scss */
-.entypo-social.c-flickr:before {
-  content: '\F304';
+/* line 305, ../sass/_buttons.scss */
+.btn-sharp {
+  border-radius: 0;
 }
 
-/* line 20, ../sass/_entypo-font.scss */
-.entypo-social.vimeo:before {
-  content: '\F306';
+/* line 309, ../sass/_buttons.scss */
+.btn-border {
+  background: none;
 }
 
-/* line 21, ../sass/_entypo-font.scss */
-.entypo-social.c-vimeo:before {
-  content: '\F307';
+/* line 313, ../sass/_buttons.scss */
+.btn-white.btn-border {
+  color: #fff;
+  border: 2px solid #fff;
+}
+/* line 316, ../sass/_buttons.scss */
+.btn-white.btn-border:hover, .btn-white.btn-border:focus, .btn-white.btn-border:active, .btn-white.btn-border.active {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #fff;
 }
 
-/* line 22, ../sass/_entypo-font.scss */
-.entypo-social.twitter:before {
-  content: '\F309';
+/* line 326, ../sass/_buttons.scss */
+.btn-black.btn-border {
+  color: #000;
+  border: 2px solid #000;
+}
+/* line 329, ../sass/_buttons.scss */
+.btn-black.btn-border:hover, .btn-black.btn-border:focus, .btn-black.btn-border:active, .btn-black.btn-border.active {
+  background-color: #222222;
+  color: #fff;
+  border: 2px solid #222222;
 }
 
-/* line 23, ../sass/_entypo-font.scss */
-.entypo-social.c-twitter:before {
-  content: '\F30A';
+/* line 338, ../sass/_buttons.scss */
+.btn-blue.btn-border {
+  color: #2196f3;
+  border: 2px solid #2196f3;
+}
+/* line 341, ../sass/_buttons.scss */
+.btn-blue.btn-border:hover, .btn-blue.btn-border:focus, .btn-blue.btn-border:active, .btn-blue.btn-border.active {
+  background-color: #2196f3;
+  color: #fff;
+  border: 2px solid #2196f3;
 }
 
-/* line 24, ../sass/_entypo-font.scss */
-.entypo-social.facebook:before {
-  content: '\F30C';
+/* line 350, ../sass/_buttons.scss */
+.btn-red.btn-border {
+  color: #f44336;
+  border: 2px solid #f44336;
+}
+/* line 353, ../sass/_buttons.scss */
+.btn-red.btn-border:hover, .btn-red.btn-border:focus, .btn-red.btn-border:active, .btn-red.btn-border.active {
+  background-color: #f44336;
+  color: #fff;
+  border: 2px solid #f44336;
 }
 
-/* line 25, ../sass/_entypo-font.scss */
-.entypo-social.c-facebook:before {
-  content: '\F30D';
+/* line 362, ../sass/_buttons.scss */
+.btn-green.btn-border {
+  color: #4caf50;
+  border: 2px solid #4caf50;
+}
+/* line 365, ../sass/_buttons.scss */
+.btn-green.btn-border:hover, .btn-green.btn-border:focus, .btn-green.btn-border:active, .btn-green.btn-border.active {
+  background-color: #4caf50;
+  color: #fff;
+  border: 2px solid #4caf50;
 }
 
-/* line 26, ../sass/_entypo-font.scss */
-.entypo-social.s-facebook:before {
-  content: '\F30E';
+/* line 374, ../sass/_buttons.scss */
+.btn-yellow.btn-border {
+  color: #ffeb3b;
+  border: 2px solid #ffeb3b;
+}
+/* line 377, ../sass/_buttons.scss */
+.btn-yellow.btn-border:hover, .btn-yellow.btn-border:focus, .btn-yellow.btn-border:active, .btn-yellow.btn-border.active {
+  background-color: #ffeb3b;
+  color: #fff;
+  border: 2px solid #ffeb3b;
 }
 
-/* line 27, ../sass/_entypo-font.scss */
-.entypo-social.gplus:before {
-  content: '\F30F';
+/* line 386, ../sass/_buttons.scss */
+.btn-purple.btn-border {
+  color: #9c27b0;
+  border: 2px solid #9c27b0;
+}
+/* line 389, ../sass/_buttons.scss */
+.btn-purple.btn-border:hover, .btn-purple.btn-border:focus, .btn-purple.btn-border:active, .btn-purple.btn-border.active {
+  background-color: #9c27b0;
+  color: #fff;
+  border: 2px solid #9c27b0;
 }
 
-/* line 28, ../sass/_entypo-font.scss */
-.entypo-social.c-gplus:before {
-  content: '\F310';
+/* line 398, ../sass/_buttons.scss */
+.btn-default.btn-border {
+  color: #fff;
+  border: 2px solid #fff;
+}
+/* line 401, ../sass/_buttons.scss */
+.btn-default.btn-border:hover, .btn-default.btn-border:focus, .btn-default.btn-border:active, .btn-default.btn-border.active {
+  background-color: #fff;
+  color: #fff;
+  border: 2px solid #fff;
 }
 
-/* line 29, ../sass/_entypo-font.scss */
-.entypo-social.pinterest:before {
-  content: '\F312';
+/* line 410, ../sass/_buttons.scss */
+.btn-primary.btn-border {
+  color: #337ab7;
+  border: 2px solid #337ab7;
+}
+/* line 413, ../sass/_buttons.scss */
+.btn-primary.btn-border:hover, .btn-primary.btn-border:focus, .btn-primary.btn-border:active, .btn-primary.btn-border.active {
+  background-color: #337ab7;
+  color: #fff;
+  border: 2px solid #337ab7;
 }
 
-/* line 30, ../sass/_entypo-font.scss */
-.entypo-social.c-pinterest:before {
-  content: '\F313';
+/* line 422, ../sass/_buttons.scss */
+.btn-success.btn-border {
+  color: #5cb85c;
+  border: 2px solid #5cb85c;
+}
+/* line 425, ../sass/_buttons.scss */
+.btn-success.btn-border:hover, .btn-success.btn-border:focus, .btn-success.btn-border:active, .btn-success.btn-border.active {
+  background-color: #5cb85c;
+  color: #fff;
+  border: 2px solid #5cb85c;
 }
 
-/* line 31, ../sass/_entypo-font.scss */
-.entypo-social.tumblr:before {
-  content: '\F315';
+/* line 434, ../sass/_buttons.scss */
+.btn-info.btn-border {
+  color: #5bc0de;
+  border: 2px solid #5bc0de;
+}
+/* line 437, ../sass/_buttons.scss */
+.btn-info.btn-border:hover, .btn-info.btn-border:focus, .btn-info.btn-border:active, .btn-info.btn-border.active {
+  background-color: #5bc0de;
+  color: #fff;
+  border: 2px solid #5bc0de;
 }
 
-/* line 32, ../sass/_entypo-font.scss */
-.entypo-social.c-tumblr:before {
-  content: '\F316';
+/* line 446, ../sass/_buttons.scss */
+.btn-warning.btn-border {
+  color: #f0ad4e;
+  border: 2px solid #f0ad4e;
+}
+/* line 449, ../sass/_buttons.scss */
+.btn-warning.btn-border:hover, .btn-warning.btn-border:focus, .btn-warning.btn-border:active, .btn-warning.btn-border.active {
+  background-color: #f0ad4e;
+  color: #fff;
+  border: 2px solid #f0ad4e;
 }
 
-/* line 33, ../sass/_entypo-font.scss */
-.entypo-social.linkedin:before {
-  content: '\F318';
+/* line 458, ../sass/_buttons.scss */
+.btn-danger.btn-border {
+  color: #d9534f;
+  border: 2px solid #d9534f;
+}
+/* line 461, ../sass/_buttons.scss */
+.btn-danger.btn-border:hover, .btn-danger.btn-border:focus, .btn-danger.btn-border:active, .btn-danger.btn-border.active {
+  background-color: #d9534f;
+  color: #fff;
+  border: 2px solid #d9534f;
 }
 
-/* line 34, ../sass/_entypo-font.scss */
-.entypo-social.c-linkedin:before {
-  content: '\F319';
+/* line 474, ../sass/_buttons.scss */
+.btn-block {
+  display: block;
+  width: 100%;
 }
 
-/* line 35, ../sass/_entypo-font.scss */
-.entypo-social.dribbble:before {
-  content: '\F31B';
+/* line 480, ../sass/_buttons.scss */
+.btn-block + .btn-block {
+  margin-top: 5px;
 }
 
-/* line 36, ../sass/_entypo-font.scss */
-.entypo-social.c-dribbble:before {
-  content: '\F31C';
+/* line 488, ../sass/_buttons.scss */
+input[type="submit"].btn-block,
+input[type="reset"].btn-block,
+input[type="button"].btn-block {
+  width: 100%;
 }
 
-/* line 37, ../sass/_entypo-font.scss */
-.entypo-social.stumbleupon:before {
-  content: '\F31E';
+/* line 1, ../sass/_portfolio.scss */
+.portfolio-block {
+  position: relative;
+  visibility: visible;
+}
+/* line 4, ../sass/_portfolio.scss */
+.portfolio-block .portfolio-image-block__link {
+  display: block;
+  line-height: 1;
+}
+/* line 8, ../sass/_portfolio.scss */
+.portfolio-block .portfolio-content-block {
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 23, ../sass/_portfolio.scss */
+.portfolio-block .portfolio-content-block:hover, .portfolio-block .portfolio-content-block:focus {
+  opacity: 1;
+}
+/* line 26, ../sass/_portfolio.scss */
+.portfolio-block .portfolio-content-block .portfolio-content-block-holder {
+  background-color: rgba(0, 0, 0, 0.75);
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+/* line 31, ../sass/_portfolio.scss */
+.portfolio-block .portfolio-content-block .portfolio-content-block-holder .portfolio-content-block-text {
+  color: #fff;
+  display: table-cell;
+  height: 100%;
+  letter-spacing: 1px;
+  margin-top: 40px;
+  padding: 15px 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 40, ../sass/_portfolio.scss */
+.portfolio-block .portfolio-content-block .portfolio-content-block-holder .portfolio-content-block-text .portfolio-content-block-sub-title {
+  color: #ccc;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* line 57, ../sass/_portfolio.scss */
+.portfolio-block .portfolio-content-block .portfolio-content-block-holder .portfolio-content-block-text .portfolio-content-block-title {
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
-/* line 38, ../sass/_entypo-font.scss */
-.entypo-social.c-stumbleupon:before {
-  content: '\F31F';
+/* line 17, ../sass/jp-site.scss */
+hr {
+  margin-top: 1.5;
+  margin-bottom: 1.5;
+  border: 0;
+  border-top: 1px solid #777777;
 }
 
-/* line 39, ../sass/_entypo-font.scss */
-.entypo-social.lastfm:before {
-  content: '\F321';
+/* line 23, ../sass/jp-site.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* line 40, ../sass/_entypo-font.scss */
-.entypo-social.c-lastfm:before {
-  content: '\F322';
+/* line 26, ../sass/jp-site.scss */
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* line 41, ../sass/_entypo-font.scss */
-.entypo-social.rdio:before {
-  content: '\F324';
-}
-
-/* line 42, ../sass/_entypo-font.scss */
-.entypo-social.c-rdio:before {
-  content: '\F325';
-}
-
-/* line 43, ../sass/_entypo-font.scss */
-.entypo-social.spotify:before {
-  content: '\F327';
-}
-
-/* line 44, ../sass/_entypo-font.scss */
-.entypo-social.c-spotify:before {
-  content: '\F328';
-}
-
-/* line 45, ../sass/_entypo-font.scss */
-.entypo-social.qq:before {
-  content: '\F32A';
-}
-
-/* line 46, ../sass/_entypo-font.scss */
-.entypo-social.instagram:before {
-  content: '\F32D';
-}
-
-/* line 47, ../sass/_entypo-font.scss */
-.entypo-social.dropbox:before {
-  content: '\F330';
-}
-
-/* line 48, ../sass/_entypo-font.scss */
-.entypo-social.evernote:before {
-  content: '\F333';
-}
-
-/* line 49, ../sass/_entypo-font.scss */
-.entypo-social.flattr:before {
-  content: '\F336';
-}
-
-/* line 50, ../sass/_entypo-font.scss */
-.entypo-social.skype:before {
-  content: '\F339';
-}
-
-/* line 51, ../sass/_entypo-font.scss */
-.entypo-social.c-skype:before {
-  content: '\F33A';
-}
-
-/* line 52, ../sass/_entypo-font.scss */
-.entypo-social.renren:before {
-  content: '\F33C';
-}
-
-/* line 53, ../sass/_entypo-font.scss */
-.entypo-social.sina-weibo:before {
-  content: '\F33F';
-}
-
-/* line 54, ../sass/_entypo-font.scss */
-.entypo-social.paypal:before {
-  content: '\F342';
-}
-
-/* line 55, ../sass/_entypo-font.scss */
-.entypo-social.picasa:before {
-  content: '\F345';
-}
-
-/* line 56, ../sass/_entypo-font.scss */
-.entypo-social.soundcloud:before {
-  content: '\F348';
-}
-
-/* line 57, ../sass/_entypo-font.scss */
-.entypo-social.mixi:before {
-  content: '\F34B';
-}
-
-/* line 58, ../sass/_entypo-font.scss */
-.entypo-social.behance:before {
-  content: '\F34E';
-}
-
-/* line 59, ../sass/_entypo-font.scss */
-.entypo-social.google-circles:before {
-  content: '\F351';
-}
-
-/* line 60, ../sass/_entypo-font.scss */
-.entypo-social.vk:before {
-  content: '\F354';
-}
-
-/* line 61, ../sass/_entypo-font.scss */
-.entypo-social.smashing:before {
-  content: '\F357';
-}
-
-/* line 14, ../sass/jp-site.scss */
+/* line 30, ../sass/jp-site.scss */
 body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
@@ -974,18 +2048,18 @@ body {
   background-size: 100px 100px;
 }
 
-/* line 22, ../sass/jp-site.scss */
+/* line 38, ../sass/jp-site.scss */
 p {
   text-align: justify;
   display: block;
   margin: 0 auto 2%;
 }
 
-/* line 27, ../sass/jp-site.scss */
+/* line 43, ../sass/jp-site.scss */
 .page-wrapper {
   overflow: hidden;
 }
-/* line 29, ../sass/jp-site.scss */
+/* line 45, ../sass/jp-site.scss */
 .page-wrapper.background-home {
   background-image: url(/images/background-jp.jpg);
   background-attachment: fixed;
@@ -994,13 +2068,13 @@ p {
   background-position: center center;
 }
 
-/* line 37, ../sass/jp-site.scss */
+/* line 53, ../sass/jp-site.scss */
 .container {
   max-width: 1170px;
   margin: 0 auto;
 }
 
-/* line 41, ../sass/jp-site.scss */
+/* line 57, ../sass/jp-site.scss */
 .splash {
   width: 100%;
   overflow: hidden;
@@ -1008,7 +2082,7 @@ p {
 }
 
 /* =========== HEADER MENU ============= */
-/* line 47, ../sass/jp-site.scss */
+/* line 63, ../sass/jp-site.scss */
 .logo-link {
   color: #fff;
   padding: 18px;
@@ -1020,14 +2094,14 @@ p {
   border-bottom: 0;
   border-bottom: 1px solid transparent;
 }
-/* line 56, ../sass/jp-site.scss */
+/* line 72, ../sass/jp-site.scss */
 .logo-link:hover, .logo-link:active {
   border-bottom: 0;
   outline: 0;
   text-decoration: none;
 }
 
-/* line 63, ../sass/jp-site.scss */
+/* line 79, ../sass/jp-site.scss */
 .header-menu ul {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   list-style: none;
@@ -1036,14 +2110,14 @@ p {
   margin: 0px;
   width: 100%;
 }
-/* line 70, ../sass/jp-site.scss */
+/* line 86, ../sass/jp-site.scss */
 .header-menu ul li {
   float: left;
   text-align: center;
   font-size: 1.414em;
   line-height: 1.32603;
 }
-/* line 74, ../sass/jp-site.scss */
+/* line 90, ../sass/jp-site.scss */
 .header-menu ul li a {
   color: #fff;
   font-weight: 300;
@@ -1051,7 +2125,7 @@ p {
   display: inline-block;
   padding: 10px;
   margin: 0 auto;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid transparent;
   text-transform: uppercase;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
@@ -1064,87 +2138,88 @@ p {
   -ms-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
   transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
 }
-/* line 93, ../sass/jp-site.scss */
+/* line 109, ../sass/jp-site.scss */
 .header-menu ul li a:hover, .header-menu ul li a:active {
-  color: #c4dcff;
-  border-bottom: 1px solid #c4dcff;
+  color: #f44336;
+  border-bottom: 1px solid #f44336;
 }
 
 /* header presentation styles */
-/* line 102, ../sass/jp-site.scss */
+/* line 118, ../sass/jp-site.scss */
 .header {
   padding: 15%;
   color: #fff;
 }
-/* line 106, ../sass/jp-site.scss */
-.header .presentation h5, .header .presentation h6, .header .presentation .h6 {
-  font-weight: 300;
-  text-align: center;
-}
-
-/* =========== SOCIAL LINKS ============= */
-/* line 114, ../sass/jp-site.scss */
-.social {
-  background-color: #2e2e2e;
-}
-/* line 116, ../sass/jp-site.scss */
-.social a {
-  font-family: 'EntypoSocialRegular';
-}
 
 /* =========== FOOTER ============= */
 /* line 125, ../sass/jp-site.scss */
-footer {
-  background-color: #1f1f1f;
+footer.footer {
+  background-color: #222222;
 }
-
-/* link styles */
+/* line 127, ../sass/jp-site.scss */
+footer.footer * {
+  color: #fff;
+}
 /* line 130, ../sass/jp-site.scss */
-a {
-  text-decoration: none;
-  font-weight: 700;
-  color: initial;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  border-bottom: 1px solid transparent;
+footer.footer a {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-/* line 136, ../sass/jp-site.scss */
-a:hover, a :active {
-  color: gummi;
-  border-bottom: 1px dotted goldenrod;
+/* line 134, ../sass/jp-site.scss */
+footer.footer a:hover, footer.footer a:active {
+  color: #f44336;
+  border-bottom: 0;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-/* line 144, ../sass/jp-site.scss */
+/* link styles */
+/* line 145, ../sass/jp-site.scss */
+a {
+  text-decoration: none;
+  color: initial;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 152, ../sass/jp-site.scss */
+a:hover, a:active {
+  color: #f44336;
+  border-bottom: 1px solid #f44336;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 160, ../sass/jp-site.scss */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* line 151, ../sass/jp-site.scss */
+/* line 165, ../sass/jp-site.scss */
+img.fit-cover {
+  object-fit: cover !important;
+}
+
+/* line 169, ../sass/jp-site.scss */
 section {
   width: 100%;
   overflow: hidden;
   float: left;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
-/* line 158, ../sass/jp-site.scss */
+/* line 175, ../sass/jp-site.scss */
 aside {
   float: left;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   background: pink;
 }
 
-/* line 164, ../sass/jp-site.scss */
+/* line 180, ../sass/jp-site.scss */
 footer {
   clear: both;
 }
