@@ -64,7 +64,6 @@ p {
   color: #fff;
   padding: 18px;
   display: inline-block;
-  @include setType(5, $ms-up1);
   font-weight: 300;
   height: 100%;
   border-bottom: 0;
@@ -86,7 +85,6 @@ p {
     li {
       float: left;
       text-align: center;
-      @include setType(5, $ms-up1);
       a {
         color: #fff;
         font-weight: 300;
