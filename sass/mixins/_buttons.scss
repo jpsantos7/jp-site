@@ -129,16 +129,6 @@ $btn-border-radius-small:        $border-radius-small;
   border-radius: $border-radius;
 }
 
-// WebKit-style focus
-
-@mixin tab-focus() {
-  // Default
-  outline: thin dotted;
-  // WebKit
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-
 //
 // Buttons
 // --------------------------------------------------
@@ -312,159 +302,159 @@ a.btn {
 
 .btn-white.btn-border {
   color: $btn-white-bg;
-  border: 2px solid $btn-white-bg;
+  border: 1px solid $btn-white-bg;
   &:hover,
   &:focus,
   &:active,
   &.active {
     background-color: $btn-white-bg;
     color: #000;
-    border: 2px solid $btn-white-bg;
+    border: 1px solid $btn-white-bg;
   }
 }
 
 .btn-black.btn-border {
   color: $btn-black-bg;
-  border: 2px solid $btn-black-bg;
+  border: 1px solid $btn-black-bg;
   &:hover,
   &:focus,
   &:active,
   &.active {
     background-color: $gray-darker;
     color: #fff;
-    border: 2px solid $gray-darker;
+    border: 1px solid $gray-darker;
   }
 }
 .btn-blue.btn-border {
   color: $btn-blue-bg;
-  border: 2px solid $btn-blue-bg;
+  border: 1px solid $btn-blue-bg;
   &:hover,
   &:focus,
   &:active,
   &.active {
     background-color: $btn-blue-bg;
     color: #fff;
-    border: 2px solid $btn-blue-bg;
+    border: 1px solid $btn-blue-bg;
   }
 }
 .btn-red.btn-border {
   color: $btn-red-bg;
-  border: 2px solid $btn-red-bg;
+  border: 1px solid $btn-red-bg;
   &:hover,
   &:focus,
   &:active,
   &.active {
     background-color: $btn-red-bg;
     color: #fff;
-    border: 2px solid $btn-red-bg;
+    border: 1px solid $btn-red-bg;
   }
 }
 .btn-green.btn-border {
   color: $btn-green-bg;
-  border: 2px solid $btn-green-bg;
+  border: 1px solid $btn-green-bg;
   &:hover,
   &:focus,
   &:active,
   &.active {
     background-color: $btn-green-bg;
     color: #fff;
-    border: 2px solid $btn-green-bg;
+    border: 1px solid $btn-green-bg;
   }
 }
 .btn-yellow.btn-border {
   color: $btn-yellow-bg;
-  border: 2px solid $btn-yellow-bg;
+  border: 1px solid $btn-yellow-bg;
   &:hover,
   &:focus,
   &:active,
   &.active {
     background-color: $btn-yellow-bg;
     color: #fff;
-    border: 2px solid $btn-yellow-bg;
+    border: 1px solid $btn-yellow-bg;
   }
 }
 .btn-purple.btn-border {
   color: $btn-purple-bg;
-  border: 2px solid $btn-purple-bg;
+  border: 1px solid $btn-purple-bg;
   &:hover,
   &:focus,
   &:active,
   &.active {
     background-color: $btn-purple-bg;
     color: #fff;
-    border: 2px solid $btn-purple-bg;
+    border: 1px solid $btn-purple-bg;
   }
 }
 .btn-default.btn-border {
   color: $btn-default-bg;
-  border: 2px solid $btn-default-bg;
+  border: 1px solid $btn-default-bg;
   &:hover,
   &:focus,
   &:active,
   &.active {
     background-color: $btn-default-bg;
     color: #fff;
-    border: 2px solid $btn-default-bg;
+    border: 1px solid $btn-default-bg;
   }
 }
 .btn-primary.btn-border {
   color: $btn-primary-bg;
-  border: 2px solid $btn-primary-bg;
+  border: 1px solid $btn-primary-bg;
   &:hover,
   &:focus,
   &:active,
   &.active {
     background-color: $btn-primary-bg;
     color: #fff;
-    border: 2px solid $btn-primary-bg;
+    border: 1px solid $btn-primary-bg;
   }
 }
 .btn-success.btn-border {
   color: $btn-success-bg;
-  border: 2px solid $btn-success-bg;
+  border: 1px solid $btn-success-bg;
   &:hover,
   &:focus,
   &:active,
   &.active {
     background-color: $btn-success-bg;
     color: #fff;
-    border: 2px solid $btn-success-bg;
+    border: 1px solid $btn-success-bg;
   }
 }
 .btn-info.btn-border {
   color: $btn-info-bg;
-  border: 2px solid $btn-info-bg;
+  border: 1px solid $btn-info-bg;
   &:hover,
   &:focus,
   &:active,
   &.active {
     background-color: $btn-info-bg;
     color: #fff;
-    border: 2px solid $btn-info-bg;
+    border: 1px solid $btn-info-bg;
   }
 }
 .btn-warning.btn-border {
   color: $btn-warning-bg;
-  border: 2px solid $btn-warning-bg;
+  border: 1px solid $btn-warning-bg;
   &:hover,
   &:focus,
   &:active,
   &.active {
     background-color: $btn-warning-bg;
     color: #fff;
-    border: 2px solid $btn-warning-bg;
+    border: 1px solid $btn-warning-bg;
   }
 }
 .btn-danger.btn-border {
   color: $btn-danger-bg;
-  border: 2px solid $btn-danger-bg;
+  border: 1px solid $btn-danger-bg;
   &:hover,
   &:focus,
   &:active,
   &.active {
     background-color: $btn-danger-bg;
     color: #fff;
-    border: 2px solid $btn-danger-bg;
+    border: 1px solid $btn-danger-bg;
   }
 }
 
