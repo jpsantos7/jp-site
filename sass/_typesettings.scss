@@ -414,7 +414,7 @@ body {
     margin-top: emRhythm(4);
     margin-bottom: 0;
     border: none; // [1]
-    border-top-color: $text-color;
+    border-top-color: $gray-light;
     border-top-style: solid;
     @include rhythmBorderTop(1px, 4);
   }
