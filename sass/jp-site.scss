@@ -7,7 +7,7 @@
 $clr-em: #c4dcff;
 
 $font-sans: 'Source Sans Pro','Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-serif: 'Alegreya', sans-serif;
+$font-serif: 'Raleway', sans-serif;
 $font-mono: 'Lucida Console', Monaco, monospace;
 
 // Core variables and mixins
@@ -47,10 +47,13 @@ body {
   z-index: 1000;
   overflow: hidden;
   &.home-bg {
-    background-image: url(/images/background-jp.jpg);
+    background-image: url(/images/background-jp.png);
   }
   &.resume-bg {
     background-image: url(/images/code.png);
+  }
+  &.contact-bg {
+    background-image: url(/images/contact.png);
   }
   &[class*="-bg"] {
     background-attachment: fixed;
@@ -87,10 +90,14 @@ body {
     padding: 0;
     display: table;
     margin: 0px;
+    float: right;
     width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
     li {
-      float: left;
-      text-align: center;
+      display: table-cell;
+      float: none;
+      width: 1%;
       a {
         color: #fff;
         font-weight: 300;
@@ -126,6 +133,14 @@ body {
 .header {
   padding: 15%;
   color: #fff;
+  a {
+    text-decoration: none;
+    color: $brand-red;
+    border-bottom: 1px solid $brand-red;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
 }
 
 
@@ -139,6 +154,7 @@ footer.footer {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    display: inline-block;
     &:hover,
     &:focus,
     &:active,
@@ -153,10 +169,10 @@ footer.footer {
 }
 
 /* link styles */
-a {
+a, a.social-link {
   text-decoration: none;
   color: initial;
-  border: 1px solid transparent;
+  border-bottom: 1px solid transparent;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -170,6 +186,14 @@ a {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+  }
+}
+a.social-link {
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    border-bottom: 1px solid transparent;
   }
 }
 img {
