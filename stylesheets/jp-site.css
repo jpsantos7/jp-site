@@ -2672,9 +2672,11 @@ hr {
     width: -webkit-calc((((100% + 2%) / 12) * 12) - 2%);
     width: -moz-calc((((100% + 2%) / 12) * 12) - 2%);
     width: calc((((100% + 2%) / 12) * 12) - 2%);
+    margin-left: 0;
+    margin-right: 0;
   }
 
-  /* line 435, ../sass/_grid.scss */
+  /* line 437, ../sass/_grid.scss */
   [class^="col-"][class^="off-"], [class^="col-"][class*=" off-"] {
     margin-left: 0 !important;
   }
@@ -3062,10 +3064,13 @@ hr {
 }
 /* line 4, ../sass/_portfolio.scss */
 .portfolio-block .portfolio-image-block__link {
-  display: block;
   line-height: 1;
 }
-/* line 8, ../sass/_portfolio.scss */
+/* line 6, ../sass/_portfolio.scss */
+.portfolio-block .portfolio-image-block__link img {
+  width: 100%;
+}
+/* line 10, ../sass/_portfolio.scss */
 .portfolio-block .portfolio-content-block {
   height: 100%;
   left: 0;
@@ -3073,27 +3078,27 @@ hr {
   position: absolute;
   top: 0;
   width: 100%;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 23, ../sass/_portfolio.scss */
+/* line 25, ../sass/_portfolio.scss */
 .portfolio-block .portfolio-content-block:hover, .portfolio-block .portfolio-content-block:focus {
   opacity: 1;
 }
-/* line 26, ../sass/_portfolio.scss */
+/* line 29, ../sass/_portfolio.scss */
 .portfolio-block .portfolio-content-block .portfolio-content-block-holder {
   background-color: rgba(0, 0, 0, 0.75);
   display: table;
   height: 100%;
   width: 100%;
 }
-/* line 31, ../sass/_portfolio.scss */
+/* line 34, ../sass/_portfolio.scss */
 .portfolio-block .portfolio-content-block .portfolio-content-block-holder .portfolio-content-block-text {
   color: #fff;
   display: table-cell;
@@ -3104,7 +3109,7 @@ hr {
   text-align: center;
   vertical-align: middle;
 }
-/* line 40, ../sass/_portfolio.scss */
+/* line 43, ../sass/_portfolio.scss */
 .portfolio-block .portfolio-content-block .portfolio-content-block-holder .portfolio-content-block-text .portfolio-content-block-sub-title {
   color: #ccc;
   font-size: 13px;
@@ -3116,13 +3121,13 @@ hr {
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
-  -webkit-transition: all .3s ease-out;
-  -moz-transition: all .3s ease-out;
-  -ms-transition: all .3s ease-out;
-  -o-transition: all .3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 57, ../sass/_portfolio.scss */
+/* line 60, ../sass/_portfolio.scss */
 .portfolio-block .portfolio-content-block .portfolio-content-block-holder .portfolio-content-block-text .portfolio-content-block-title {
   font-weight: 700;
   letter-spacing: 1px;
@@ -3133,10 +3138,10 @@ hr {
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
-  -webkit-transition: all .3s ease-out;
-  -moz-transition: all .3s ease-out;
-  -ms-transition: all .3s ease-out;
-  -o-transition: all .3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
@@ -3499,12 +3504,12 @@ small, .milli {
 
 /* line 38, ../sass/jp-site.scss */
 body {
+  background: url(/images/billie-holiday.png), #f2f1ed;
+  background-size: 100px 100px;
+  background-repeat: repeat;
+  text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
-  text-rendering: auto;
-  background: url(/images/billie-holiday.png), #f2f1ed;
-  background-repeat: repeat;
-  background-size: 100px 100px;
 }
 
 /* line 46, ../sass/jp-site.scss */
@@ -3525,14 +3530,18 @@ body {
   background-image: url(/images/contact.png);
 }
 /* line 58, ../sass/jp-site.scss */
+.page-wrapper.portfolio-bg {
+  background-image: url(/images/portfolio.png);
+}
+/* line 61, ../sass/jp-site.scss */
 .page-wrapper[class*="-bg"] {
   background-attachment: fixed;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
 }
 
-/* line 66, ../sass/jp-site.scss */
+/* line 69, ../sass/jp-site.scss */
 .splash {
   width: 100%;
   overflow: hidden;
@@ -3540,161 +3549,190 @@ body {
 }
 
 /* =========== HEADER MENU ============= */
-/* line 72, ../sass/jp-site.scss */
+/* line 75, ../sass/jp-site.scss */
 .logo-link {
+  border-bottom: 0;
+  border-bottom: 1px solid transparent;
   color: #fff;
-  padding: 18px;
   display: inline-block;
   font-weight: 300;
   height: 100%;
-  border-bottom: 0;
-  border-bottom: 1px solid transparent;
+  outline: 0;
+  padding: 18px;
 }
-/* line 80, ../sass/jp-site.scss */
+/* line 84, ../sass/jp-site.scss */
 .logo-link:hover, .logo-link:active {
-  border-bottom: 0;
+  border-bottom: 1px solid transparent;
   outline: 0;
   text-decoration: none;
 }
 
-/* line 87, ../sass/jp-site.scss */
-.header-menu ul {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  list-style: none;
-  padding: 0;
-  display: table;
-  margin: 0px;
-  float: right;
-  width: 100%;
-  table-layout: fixed;
-  border-collapse: separate;
+/* line 90, ../sass/jp-site.scss */
+.header-menu {
+  text-align: center;
+  padding: 14px 0;
 }
-/* line 97, ../sass/jp-site.scss */
+/* line 93, ../sass/jp-site.scss */
+.header-menu ul {
+  border-collapse: separate;
+  display: table;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  float: right;
+  list-style: none;
+  margin: 0px;
+  padding: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+/* line 103, ../sass/jp-site.scss */
 .header-menu ul li {
   display: table-cell;
   float: none;
   width: 1%;
 }
-/* line 101, ../sass/jp-site.scss */
+/* line 107, ../sass/jp-site.scss */
 .header-menu ul li a {
-  color: #fff;
-  font-weight: 300;
-  height: 100%;
-  display: inline-block;
-  padding: 10px;
-  margin: 0 auto;
   border-bottom: 1px solid transparent;
-  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+  font-weight: 300;
+  margin: 0 auto;
+  height: 100%;
+  padding: 10px;
+  position: relative;
   text-decoration: none;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
-  -moz-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
-  -o-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
-  -ms-transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
-  transition: all 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  text-transform: uppercase;
 }
-/* line 121, ../sass/jp-site.scss */
+/* line 118, ../sass/jp-site.scss */
+.header-menu ul li a:after {
+  background-color: transparent;
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2px;
+  width: 0;
+  -webkit-transition: width .5s ease, background-color .5s ease;
+  -moz-transition: width .5s ease, background-color .5s ease;
+  transition: width .5s ease, background-color .5s ease;
+}
+/* line 133, ../sass/jp-site.scss */
 .header-menu ul li a:hover, .header-menu ul li a:focus, .header-menu ul li a:active, .header-menu ul li a.active {
   color: #f44336;
-  border-bottom: 1px solid #f44336;
+  text-decoration: none;
+}
+/* line 139, ../sass/jp-site.scss */
+.header-menu ul li a:hover:after, .header-menu ul li a:focus:after, .header-menu ul li a:active:after, .header-menu ul li a.active:after {
+  width: 100%;
+  background-color: #f44336;
 }
 
 /* header presentation styles */
-/* line 133, ../sass/jp-site.scss */
+/* line 149, ../sass/jp-site.scss */
 .header {
-  padding: 15%;
   color: #fff;
+  padding: 15%;
 }
-/* line 136, ../sass/jp-site.scss */
+/* line 152, ../sass/jp-site.scss */
 .header a {
-  text-decoration: none;
   color: #f44336;
   border-bottom: 1px solid #f44336;
+  text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 /* =========== FOOTER ============= */
-/* line 148, ../sass/jp-site.scss */
+/* line 164, ../sass/jp-site.scss */
 footer.footer {
   background-color: #222222;
 }
-/* line 150, ../sass/jp-site.scss */
+/* line 166, ../sass/jp-site.scss */
 footer.footer * {
   color: #fff;
 }
-/* line 153, ../sass/jp-site.scss */
+/* line 169, ../sass/jp-site.scss */
 footer.footer a {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  color: #fff;
   display: inline-block;
+  text-decoration: none;
 }
-/* line 158, ../sass/jp-site.scss */
+/* line 173, ../sass/jp-site.scss */
+footer.footer a:after {
+  background-color: transparent;
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 0px;
+  -webkit-transition: width .5s ease, background-color .5s ease;
+  -moz-transition: width .5s ease, background-color .5s ease;
+  transition: width .5s ease, background-color .5s ease;
+}
+/* line 184, ../sass/jp-site.scss */
 footer.footer a:hover, footer.footer a:focus, footer.footer a:active, footer.footer a.active {
   color: #f44336;
-  border-bottom: 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+/* line 190, ../sass/jp-site.scss */
+footer.footer a:hover:after, footer.footer a:focus:after, footer.footer a:active:after, footer.footer a.active:after {
+  width: 100%;
+  background-color: #f44336;
 }
 
 /* link styles */
-/* line 172, ../sass/jp-site.scss */
-a, a.social-link {
-  text-decoration: none;
-  color: initial;
-  border-bottom: 1px solid transparent;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-/* line 179, ../sass/jp-site.scss */
-a:hover, a:focus, a:active, a.active, a.social-link:hover, a.social-link:focus, a.social-link:active, a.social-link.active {
-  text-decoration: none;
-  color: #f44336;
-  border-bottom: 1px solid #f44336;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-/* line 192, ../sass/jp-site.scss */
-a.social-link:hover, a.social-link:focus, a.social-link:active, a.social-link.active {
-  border-bottom: 1px solid transparent;
-}
-
 /* line 199, ../sass/jp-site.scss */
+a, a.social-link {
+  border-bottom: 1px solid;
+  border-color: transparent;
+  color: initial;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 207, ../sass/jp-site.scss */
+a:hover, a:focus, a:active, a.active, a.social-link:hover, a.social-link:focus, a.social-link:active, a.social-link.active {
+  border-color: #f44336;
+  color: #f44336;
+  text-decoration: none;
+}
+
+/* line 217, ../sass/jp-site.scss */
+a.social-link:hover, a.social-link:focus, a.social-link:active, a.social-link.active {
+  border-color: transparent;
+}
+
+/* line 224, ../sass/jp-site.scss */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* line 204, ../sass/jp-site.scss */
+/* line 229, ../sass/jp-site.scss */
 img.fit-cover {
   object-fit: cover !important;
 }
 
-/* line 208, ../sass/jp-site.scss */
+/* line 233, ../sass/jp-site.scss */
 section {
-  width: 100%;
+  float: left;
   overflow: hidden;
-  float: left;
+  width: 100%;
 }
 
-/* line 214, ../sass/jp-site.scss */
+/* line 239, ../sass/jp-site.scss */
 aside {
-  float: left;
   background: pink;
+  float: left;
 }
 
-/* line 219, ../sass/jp-site.scss */
+/* line 244, ../sass/jp-site.scss */
 footer {
   clear: both;
 }

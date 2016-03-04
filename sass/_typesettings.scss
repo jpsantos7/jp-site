@@ -110,7 +110,7 @@ $not-integer-txt: ' value breaks vertical rhythm. Use an integer (whole number) 
 // example 3 becomes 1.125em
 @function emRhythm($lines: $base-vertical-unit, $font-size: $base-em-font-size, $silent: false) {
   @if is-int($lines) == false and $silent == false {
-    @warn  #{$lines} + $not-integer-txt;
+    @warn  "#{$lines} + $not-integer-txt";
   }
   @return (stripUnits($lines) * stripUnits($base-vertical-unit)) / (stripUnits($font-size) * stripUnits($base-font-size)) + 0em;
 }
@@ -119,7 +119,7 @@ $not-integer-txt: ' value breaks vertical rhythm. Use an integer (whole number) 
 // For example 3 becomes 1.125
 @function unitlessRhythm($lines: $base-line-multi, $font-size: $base-em-font-size, $silent: false) {
   @if is-int($lines) == false and $silent == false {
-    @warn #{$lines} + $not-integer-txt;
+    @warn "#{$lines} + $not-integer-txt";
   }
   @return ($lines * stripUnits($base-vertical-unit)) / (stripUnits($font-size) * stripUnits($base-font-size));
 }

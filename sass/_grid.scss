@@ -430,6 +430,8 @@ $gutter: 2%;
     width: webkit-grid-width(12,true);
     width: moz-grid-width(12,true);
     width: grid-width(12,true);
+    margin-left: 0;
+    margin-right: 0;
   }
   [class^="col-"] {
     &[class^="off-"],
