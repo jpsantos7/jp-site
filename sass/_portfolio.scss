@@ -23,6 +23,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     &:hover,
+    &:active,
     &:focus {
       opacity: 1;
     }
@@ -75,5 +76,10 @@
         }
       }
     }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .portfolio-block .portfolio-content-block {
+    opacity: 1;
   }
 }
