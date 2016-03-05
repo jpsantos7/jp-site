@@ -87,6 +87,12 @@ body {
     text-decoration: none;
   }
 }
+@media only screen and (max-width: 768px) {
+  .logo-link {
+    width: 100%;
+    text-align: center;
+  }
+}
 .header-menu {
   text-align: center;
   padding: 14px 0;
