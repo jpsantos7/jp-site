@@ -3506,7 +3506,7 @@ small, .milli {
 
 /* line 38, ../sass/jp-site.scss */
 body {
-  background: url(/images/billie-holiday.png), #f2f1ed;
+  background: url(../images/billie-holiday.png), #f2f1ed;
   background-size: 100px 100px;
   background-repeat: repeat;
   text-rendering: auto;
@@ -3521,19 +3521,19 @@ body {
 }
 /* line 49, ../sass/jp-site.scss */
 .page-wrapper.home-bg {
-  background-image: url(/images/background-jp.png);
+  background-image: url(../images/background-jp.png);
 }
 /* line 52, ../sass/jp-site.scss */
 .page-wrapper.resume-bg {
-  background-image: url(/images/code.png);
+  background-image: url(../images/code.png);
 }
 /* line 55, ../sass/jp-site.scss */
 .page-wrapper.contact-bg {
-  background-image: url(/images/contact.png);
+  background-image: url(../images/contact.png);
 }
 /* line 58, ../sass/jp-site.scss */
 .page-wrapper.portfolio-bg {
-  background-image: url(/images/portfolio.png);
+  background-image: url(../images/portfolio.png);
 }
 /* line 61, ../sass/jp-site.scss */
 .page-wrapper[class*="-bg"] {
