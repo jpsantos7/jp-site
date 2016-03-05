@@ -3090,17 +3090,17 @@ hr {
   box-sizing: border-box;
 }
 /* line 25, ../sass/_portfolio.scss */
-.portfolio-block .portfolio-content-block:hover, .portfolio-block .portfolio-content-block:focus {
+.portfolio-block .portfolio-content-block:hover, .portfolio-block .portfolio-content-block:active, .portfolio-block .portfolio-content-block:focus {
   opacity: 1;
 }
-/* line 29, ../sass/_portfolio.scss */
+/* line 30, ../sass/_portfolio.scss */
 .portfolio-block .portfolio-content-block .portfolio-content-block-holder {
   background-color: rgba(0, 0, 0, 0.75);
   display: table;
   height: 100%;
   width: 100%;
 }
-/* line 34, ../sass/_portfolio.scss */
+/* line 35, ../sass/_portfolio.scss */
 .portfolio-block .portfolio-content-block .portfolio-content-block-holder .portfolio-content-block-text {
   color: #fff;
   display: table-cell;
@@ -3111,7 +3111,7 @@ hr {
   text-align: center;
   vertical-align: middle;
 }
-/* line 43, ../sass/_portfolio.scss */
+/* line 44, ../sass/_portfolio.scss */
 .portfolio-block .portfolio-content-block .portfolio-content-block-holder .portfolio-content-block-text .portfolio-content-block-sub-title {
   color: #ccc;
   font-size: 13px;
@@ -3129,7 +3129,7 @@ hr {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 60, ../sass/_portfolio.scss */
+/* line 61, ../sass/_portfolio.scss */
 .portfolio-block .portfolio-content-block .portfolio-content-block-holder .portfolio-content-block-text .portfolio-content-block-title {
   font-weight: 700;
   letter-spacing: 1px;
@@ -3147,6 +3147,12 @@ hr {
   transition: all 0.3s ease-out;
 }
 
+@media only screen and (max-width: 768px) {
+  /* line 82, ../sass/_portfolio.scss */
+  .portfolio-block .portfolio-content-block {
+    opacity: 1;
+  }
+}
 /* line 204, ../sass/_typesettings.scss */
 html {
   font-size: 100%;
