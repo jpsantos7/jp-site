@@ -58,6 +58,9 @@ body {
   &.portfolio-bg {
     background-image: url(../images/portfolio.png);
   }
+  &.thales-bg {
+    background-image: url(../images/portfolio/thales/thales-apis-hmi.jpg);
+  }
   &[class*="-bg"] {
     background-attachment: fixed;
     background-position: center center;
@@ -202,6 +205,14 @@ footer.footer {
 }
 
 /* link styles */
+p > a {
+  color: $brand-red;
+  border-bottom: 1px solid $brand-red;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 a, a.social-link {
   border-bottom: 1px solid;
   border-color: transparent;
