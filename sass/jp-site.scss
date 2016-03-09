@@ -27,10 +27,10 @@ $experimental-support-for-svg: true;
 $text-color: #333;
 $base-vertical-unit: 6px;
 $base-line-multi: 4;
-$base-font-size: 16px;
+$base-font-size: 20px;
 $ms-ratio: 1.414;
 $paragraph-indent: true;
-$paragraph-justify: true;
+$paragraph-justify: false;
 $load-typesetted: true;
 
 @import "typesettings";
@@ -60,6 +60,9 @@ body {
   }
   &.thales-bg {
     background-image: url(../images/portfolio/thales/thales-apis-hmi.jpg);
+  }
+  &.easyeasyapps-site-bg {
+    background-image: url(../images/portfolio/easyeasyapps/easyeasyapps-site.jpg);
   }
   &[class*="-bg"] {
     background-attachment: fixed;
@@ -212,6 +215,9 @@ p > a {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+.table {
+  display: table;
 }
 a, a.social-link {
   border-bottom: 1px solid;

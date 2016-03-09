@@ -3118,6 +3118,7 @@ hr {
   font-style: italic;
   font-weight: 400;
   letter-spacing: 1px;
+  margin-bottom: 10px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transform: translate(0, 0);
@@ -3129,7 +3130,7 @@ hr {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 61, ../sass/_portfolio.scss */
+/* line 62, ../sass/_portfolio.scss */
 .portfolio-block .portfolio-content-block .portfolio-content-block-holder .portfolio-content-block-text .portfolio-content-block-title {
   font-weight: 700;
   letter-spacing: 1px;
@@ -3148,21 +3149,21 @@ hr {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 82, ../sass/_portfolio.scss */
+  /* line 83, ../sass/_portfolio.scss */
   .portfolio-block .portfolio-content-block {
     opacity: 1;
   }
 }
 /* line 204, ../sass/_typesettings.scss */
 html {
-  font-size: 100%;
+  font-size: 125%;
 }
 
 /* line 208, ../sass/_typesettings.scss */
 body {
   margin: 0;
   padding: 0;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 /* line 220, ../sass/_typesettings.scss */
@@ -3196,106 +3197,100 @@ h6, .h6 {
 
 /* line 256, ../sass/_typesettings.scss */
 h1, .h1 {
-  margin-bottom: 0.18756em;
+  margin-bottom: 0.15005em;
   font-size: 1.9994em;
-  line-height: 1.12534;
+  line-height: 0.90027;
 }
 @media (min-width: 43.75em) {
   /* line 256, ../sass/_typesettings.scss */
   h1, .h1 {
-    margin-bottom: 0.13264em;
+    margin-bottom: 0.10611em;
     font-size: 2.82715em;
-    line-height: 1.06114;
+    line-height: 0.84891;
   }
 }
 @media (min-width: 56.25em) {
   /* line 256, ../sass/_typesettings.scss */
   h1, .h1 {
-    margin-bottom: 0.09381em;
+    margin-bottom: 0.07505em;
     font-size: 3.99758em;
-    line-height: 0.93807;
+    line-height: 0.75045;
   }
 }
 
 /* line 272, ../sass/_typesettings.scss */
 h2, .h2 {
-  margin-bottom: 0.26521em;
+  margin-bottom: 0.21216em;
   font-size: 1.414em;
-  line-height: 1.32603;
+  line-height: 1.06082;
 }
 @media (min-width: 43.75em) {
   /* line 272, ../sass/_typesettings.scss */
   h2, .h2 {
-    margin-bottom: 0.18756em;
+    margin-bottom: 0.15005em;
     font-size: 1.9994em;
-    line-height: 1.12534;
+    line-height: 0.90027;
   }
 }
 @media (min-width: 56.25em) {
   /* line 272, ../sass/_typesettings.scss */
   h2, .h2 {
-    margin-bottom: 0.13264em;
+    margin-bottom: 0.10611em;
     font-size: 2.82715em;
-    line-height: 1.06114;
+    line-height: 0.84891;
   }
 }
 
 /* line 287, ../sass/_typesettings.scss */
 h3, .h3 {
-  margin-bottom: 0.26521em;
+  margin-bottom: 0.21216em;
   font-size: 1.414em;
-  line-height: 1.32603;
+  line-height: 1.06082;
 }
 @media (min-width: 56.25em) {
   /* line 287, ../sass/_typesettings.scss */
   h3, .h3 {
-    margin-bottom: 0.18756em;
+    margin-bottom: 0.15005em;
     font-size: 1.9994em;
-    line-height: 1.12534;
+    line-height: 0.90027;
   }
 }
 
 /* line 297, ../sass/_typesettings.scss */
 h4, .h4 {
-  margin-bottom: 0.26521em;
+  margin-bottom: 0.21216em;
   font-size: 1.414em;
-  line-height: 1.32603;
+  line-height: 1.06082;
 }
 
 /* line 302, ../sass/_typesettings.scss */
 h5, .h5,
 h6, .h6 {
-  margin-bottom: 0.375em;
+  margin-bottom: 0.3em;
   font-size: 1em;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 /* line 308, ../sass/_typesettings.scss */
 p {
   margin-top: 0;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.2em;
   padding-top: 0;
   padding-bottom: 0;
-  max-width: 36em;
-}
-@media (min-width: 43.75em) {
-  /* line 308, ../sass/_typesettings.scss */
-  p {
-    text-align: justify;
-  }
+  max-width: 28.8em;
 }
 
 /* line 323, ../sass/_typesettings.scss */
 p + p {
-  margin-top: -1.5em;
-  text-indent: 1.5em;
+  margin-top: -1.2em;
+  text-indent: 1.2em;
 }
 
 /* line 329, ../sass/_typesettings.scss */
 small,
 .font-small {
   font-size: 0.70721em;
-  line-height: 1.59075;
+  line-height: 1.2726;
 }
 
 /* line 334, ../sass/_typesettings.scss */
@@ -3310,18 +3305,18 @@ strong {
 
 /* line 342, ../sass/_typesettings.scss */
 blockquote {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
   margin-left: 0;
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 1.5em;
+  padding-left: 1.2em;
   border-left: 6px solid gray;
   font-family: "Raleway", sans-serif;
 }
 /* line 352, ../sass/_typesettings.scss */
 blockquote p {
-  margin-bottom: 0.75em;
+  margin-bottom: 0.6em;
 }
 /* line 358, ../sass/_typesettings.scss */
 blockquote footer cite:before {
@@ -3345,8 +3340,8 @@ ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 1.5em;
-  margin-left: 1.5em;
+  margin-bottom: 1.2em;
+  margin-left: 1.2em;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -3382,13 +3377,13 @@ abbr[title]:hover {
 
 /* line 413, ../sass/_typesettings.scss */
 hr {
-  margin-top: 1.5em;
+  margin-top: 1.2em;
   margin-bottom: 0;
   border: none;
   border-top-color: #777777;
   border-top-style: solid;
   border-top-width: 1px;
-  padding-top: 1.4375em;
+  padding-top: 1.15em;
 }
 
 /* line 425, ../sass/_typesettings.scss */
@@ -3546,6 +3541,10 @@ body {
   background-image: url(../images/portfolio/thales/thales-apis-hmi.jpg);
 }
 /* line 64, ../sass/jp-site.scss */
+.page-wrapper.easyeasyapps-site-bg {
+  background-image: url(../images/portfolio/easyeasyapps/easyeasyapps-site.jpg);
+}
+/* line 67, ../sass/jp-site.scss */
 .page-wrapper[class*="-bg"] {
   background-attachment: fixed;
   background-position: center center;
@@ -3553,7 +3552,7 @@ body {
   background-size: cover;
 }
 
-/* line 72, ../sass/jp-site.scss */
+/* line 75, ../sass/jp-site.scss */
 .splash {
   width: 100%;
   overflow: hidden;
@@ -3561,7 +3560,7 @@ body {
 }
 
 /* =========== HEADER MENU ============= */
-/* line 78, ../sass/jp-site.scss */
+/* line 81, ../sass/jp-site.scss */
 .logo-link {
   border-bottom: 0;
   border-bottom: 1px solid transparent;
@@ -3572,7 +3571,7 @@ body {
   outline: 0;
   padding: 18px;
 }
-/* line 87, ../sass/jp-site.scss */
+/* line 90, ../sass/jp-site.scss */
 .logo-link:hover, .logo-link:active {
   border-bottom: 1px solid transparent;
   outline: 0;
@@ -3580,18 +3579,18 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 94, ../sass/jp-site.scss */
+  /* line 97, ../sass/jp-site.scss */
   .logo-link {
     width: 100%;
     text-align: center;
   }
 }
-/* line 99, ../sass/jp-site.scss */
+/* line 102, ../sass/jp-site.scss */
 .header-menu {
   text-align: center;
   padding: 14px 0;
 }
-/* line 102, ../sass/jp-site.scss */
+/* line 105, ../sass/jp-site.scss */
 .header-menu ul {
   border-collapse: separate;
   display: table;
@@ -3603,13 +3602,13 @@ body {
   table-layout: fixed;
   width: 100%;
 }
-/* line 112, ../sass/jp-site.scss */
+/* line 115, ../sass/jp-site.scss */
 .header-menu ul li {
   display: table-cell;
   float: none;
   width: 1%;
 }
-/* line 116, ../sass/jp-site.scss */
+/* line 119, ../sass/jp-site.scss */
 .header-menu ul li a {
   border-bottom: 1px solid transparent;
   color: #fff;
@@ -3622,7 +3621,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 127, ../sass/jp-site.scss */
+/* line 130, ../sass/jp-site.scss */
 .header-menu ul li a:after {
   background-color: transparent;
   content: '';
@@ -3638,24 +3637,24 @@ body {
   -moz-transition: width .5s ease, background-color .5s ease;
   transition: width .5s ease, background-color .5s ease;
 }
-/* line 142, ../sass/jp-site.scss */
+/* line 145, ../sass/jp-site.scss */
 .header-menu ul li a:hover, .header-menu ul li a:focus, .header-menu ul li a:active, .header-menu ul li a.active {
   color: #f44336;
   text-decoration: none;
 }
-/* line 148, ../sass/jp-site.scss */
+/* line 151, ../sass/jp-site.scss */
 .header-menu ul li a:hover:after, .header-menu ul li a:focus:after, .header-menu ul li a:active:after, .header-menu ul li a.active:after {
   width: 100%;
   background-color: #f44336;
 }
 
 /* header presentation styles */
-/* line 158, ../sass/jp-site.scss */
+/* line 161, ../sass/jp-site.scss */
 .header {
   color: #fff;
   padding: 15%;
 }
-/* line 161, ../sass/jp-site.scss */
+/* line 164, ../sass/jp-site.scss */
 .header a {
   color: #f44336;
   border-bottom: 1px solid #f44336;
@@ -3666,21 +3665,21 @@ body {
 }
 
 /* =========== FOOTER ============= */
-/* line 173, ../sass/jp-site.scss */
+/* line 176, ../sass/jp-site.scss */
 footer.footer {
   background-color: #222222;
 }
-/* line 175, ../sass/jp-site.scss */
+/* line 178, ../sass/jp-site.scss */
 footer.footer * {
   color: #fff;
 }
-/* line 178, ../sass/jp-site.scss */
+/* line 181, ../sass/jp-site.scss */
 footer.footer a {
   color: #fff;
   display: inline-block;
   text-decoration: none;
 }
-/* line 182, ../sass/jp-site.scss */
+/* line 185, ../sass/jp-site.scss */
 footer.footer a:after {
   background-color: transparent;
   content: '';
@@ -3692,19 +3691,19 @@ footer.footer a:after {
   -moz-transition: width .5s ease, background-color .5s ease;
   transition: width .5s ease, background-color .5s ease;
 }
-/* line 193, ../sass/jp-site.scss */
+/* line 196, ../sass/jp-site.scss */
 footer.footer a:hover, footer.footer a:focus, footer.footer a:active, footer.footer a.active {
   color: #f44336;
   text-decoration: none;
 }
-/* line 199, ../sass/jp-site.scss */
+/* line 202, ../sass/jp-site.scss */
 footer.footer a:hover:after, footer.footer a:focus:after, footer.footer a:active:after, footer.footer a.active:after {
   width: 100%;
   background-color: #f44336;
 }
 
 /* link styles */
-/* line 208, ../sass/jp-site.scss */
+/* line 211, ../sass/jp-site.scss */
 p > a {
   color: #f44336;
   border-bottom: 1px solid #f44336;
@@ -3714,7 +3713,12 @@ p > a {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 216, ../sass/jp-site.scss */
+/* line 219, ../sass/jp-site.scss */
+.table {
+  display: table;
+}
+
+/* line 222, ../sass/jp-site.scss */
 a, a.social-link {
   border-bottom: 1px solid;
   border-color: transparent;
@@ -3724,44 +3728,44 @@ a, a.social-link {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 224, ../sass/jp-site.scss */
+/* line 230, ../sass/jp-site.scss */
 a:hover, a:focus, a:active, a.active, a.social-link:hover, a.social-link:focus, a.social-link:active, a.social-link.active {
   border-color: #f44336;
   color: #f44336;
   text-decoration: none;
 }
 
-/* line 234, ../sass/jp-site.scss */
+/* line 240, ../sass/jp-site.scss */
 a.social-link:hover, a.social-link:focus, a.social-link:active, a.social-link.active {
   border-color: transparent;
 }
 
-/* line 241, ../sass/jp-site.scss */
+/* line 247, ../sass/jp-site.scss */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* line 246, ../sass/jp-site.scss */
+/* line 252, ../sass/jp-site.scss */
 img.fit-cover {
   object-fit: cover !important;
 }
 
-/* line 250, ../sass/jp-site.scss */
+/* line 256, ../sass/jp-site.scss */
 section {
   float: left;
   overflow: hidden;
   width: 100%;
 }
 
-/* line 256, ../sass/jp-site.scss */
+/* line 262, ../sass/jp-site.scss */
 aside {
   background: pink;
   float: left;
 }
 
-/* line 261, ../sass/jp-site.scss */
+/* line 267, ../sass/jp-site.scss */
 footer {
   clear: both;
 }
