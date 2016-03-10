@@ -26,8 +26,8 @@ $experimental-support-for-svg: true;
 // settings for Typesettings
 $text-color: #333;
 $base-vertical-unit: 6px;
-$base-line-multi: 4;
-$base-font-size: 20px;
+$base-line-multi: 5;
+$base-font-size: 22px;
 $ms-ratio: 1.414;
 $paragraph-indent: true;
 $paragraph-justify: false;
@@ -61,14 +61,43 @@ body {
   &.thales-bg {
     background-image: url(../images/portfolio/thales/thales-apis-hmi.jpg);
   }
+  &.byclosure-site-bg {
+    background-image: url(../images/portfolio/byclosure/byclosure-new-site.jpg);
+  }
   &.easyeasyapps-site-bg {
     background-image: url(../images/portfolio/easyeasyapps/easyeasyapps-site.jpg);
+  }
+  &.easyeasyapps-apps-bg {
+    background-image: url(../images/portfolio/easyeasyapps/easyeasyapps-apps.jpg);
+  }
+  &.easyeasyapps-editor-bg {
+    background-image: url(../images/portfolio/easyeasyapps/easyeasyapps-editor.jpg);
+  }
+  &.happy-vet-site-ria-bg {
+    background-image: url(../images/portfolio/happyvet/happy-vet-site-ria.jpg);
+  }
+  &.webcat-site-bg {
+    background-image: url(../images/portfolio/webcat/webcat-site.jpg);
   }
   &[class*="-bg"] {
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 
