@@ -52,10 +52,10 @@ $ms-ratio: 1.414 !default;
 // [2] Paragraph setting that you can turn on or off to have your paragraphs ragged
 // right or justified.
 $paragraph-indent: true !default; // [1]
-$paragraph-justify: true !default; // [2]
+$paragraph-justify: false !default; // [2]
 
 // You can optionally load type styles that use Typesettings.
-$load-typesetted: true !default;
+$load-typesetted: false !default;
 
 //==============================================================================
 // Internal Variables

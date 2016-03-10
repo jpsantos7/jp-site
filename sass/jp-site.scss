@@ -26,11 +26,11 @@ $experimental-support-for-svg: true;
 // settings for Typesettings
 $text-color: #333;
 $base-vertical-unit: 6px;
-$base-line-multi: 4;
-$base-font-size: 16px;
+$base-line-multi: 5;
+$base-font-size: 22px;
 $ms-ratio: 1.414;
 $paragraph-indent: true;
-$paragraph-justify: true;
+$paragraph-justify: false;
 $load-typesetted: true;
 
 @import "typesettings";
@@ -58,11 +58,46 @@ body {
   &.portfolio-bg {
     background-image: url(../images/portfolio.png);
   }
+  &.thales-bg {
+    background-image: url(../images/portfolio/thales/thales-apis-hmi.jpg);
+  }
+  &.byclosure-site-bg {
+    background-image: url(../images/portfolio/byclosure/byclosure-new-site.jpg);
+  }
+  &.easyeasyapps-site-bg {
+    background-image: url(../images/portfolio/easyeasyapps/easyeasyapps-site.jpg);
+  }
+  &.easyeasyapps-apps-bg {
+    background-image: url(../images/portfolio/easyeasyapps/easyeasyapps-apps.jpg);
+  }
+  &.easyeasyapps-editor-bg {
+    background-image: url(../images/portfolio/easyeasyapps/easyeasyapps-editor.jpg);
+  }
+  &.happy-vet-site-ria-bg {
+    background-image: url(../images/portfolio/happyvet/happy-vet-site-ria.jpg);
+  }
+  &.webcat-site-bg {
+    background-image: url(../images/portfolio/webcat/webcat-site.jpg);
+  }
   &[class*="-bg"] {
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -202,6 +237,17 @@ footer.footer {
 }
 
 /* link styles */
+p > a {
+  color: $brand-red;
+  border-bottom: 1px solid $brand-red;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.table {
+  display: table;
+}
 a, a.social-link {
   border-bottom: 1px solid;
   border-color: transparent;

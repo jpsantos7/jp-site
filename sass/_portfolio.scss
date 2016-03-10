@@ -3,6 +3,7 @@
   visibility: visible;
   .portfolio-image-block__link {
     line-height: 1;
+    display: block;
     img {
       width: 100%;
     }
@@ -47,6 +48,7 @@
           font-style: italic;
           font-weight: 400;
           letter-spacing: 1px;
+          margin-bottom: 10px;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
           -webkit-transform: translate(0, 0);
