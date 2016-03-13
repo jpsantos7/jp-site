@@ -7,6 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Stylesheets -->
   <link href="stylesheets/jp-site.css" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/animate.css">
+  <!-- Js -->
+  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
   <!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Raleway:700,300,400' rel='stylesheet' type='text/css'>
@@ -37,10 +51,10 @@
     <nav>
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-6 wow fadeInDown">
             <a href="./" class="logo-link h4">jp.santos</a>
           </div>
-          <div class="col-6 header-menu">
+          <div class="col-6 header-menu wow fadeInDown">
             <ul>
               <li class="col-2 off-2"><a href="./" class="h5">Home</a></li>
               <li class="col-2"><a href="./portfolio.html" class="h5 active">Portfolio</a></li>
@@ -55,9 +69,9 @@
     <div class="header">
       <div class="presentation">
 
-        <h4 class="text-center text-uppercase mbl">Welcome to my</h4>
-        <h1 class="text-center text-uppercase mbl">Portfolio</h1>
-        <h5 class="text-center text-uppercase mbl">Let's go!</h5>
+        <h4 class="text-center text-uppercase mbl wow fadeInUp">Welcome to my</h4>
+        <h1 class="text-center text-uppercase mbl wow fadeInUp">Portfolio</h1>
+        <h5 class="text-center text-uppercase mbl wow fadeInUp">Let's go!</h5>
       </div>
     </div>
   </div>
@@ -66,7 +80,7 @@
   <div class="pvn">
 
     <div class="col-6 mvn">
-      <section class="portfolio-block">
+      <section class="portfolio-block wow fadeInUp" data-wow-delay="0.5s">
         <div class="portfolio-image-block">
           <a class="portfolio-image-block__link" href="./thales.html">
             <img src="./images/portfolio/thales/thales-apis-hmi.jpg" class="img-responsive fit-cover">
@@ -85,7 +99,7 @@
     </div>
     
     <div class="col-6 mvn">
-      <section class="portfolio-block">
+      <section class="portfolio-block wow fadeInUp" data-wow-delay="0.5s">
         <div class="portfolio-image-block">
           <a class="portfolio-image-block__link" href="./byclosure-site.html">
             <img src="images/portfolio/byclosure/byclosure-new-site.jpg" class="img-responsive fit-cover">
@@ -107,7 +121,7 @@
     
 
     <div class="col-6 mvn">
-      <section class="portfolio-block">
+      <section class="portfolio-block wow fadeInUp" data-wow-delay="0.5s">
         <div class="portfolio-image-block">
           <a class="portfolio-image-block__link" href="./easyeasyapps-site.html">
             <img src="images/portfolio/easyeasyapps/easyeasyapps-site.jpg" class="img-responsive fit-cover">
@@ -126,7 +140,7 @@
     </div>
       
     <div class="col-6 mvn">
-      <section class="portfolio-block">
+      <section class="portfolio-block wow fadeInUp" data-wow-delay="0.5s">
         <div class="portfolio-image-block">
           <a class="portfolio-image-block__link" href="./easyeasyapps-editor.html">
             <img src="images/portfolio/easyeasyapps/easyeasyapps-editor.jpg" class="img-responsive fit-cover">
@@ -147,7 +161,7 @@
     <div class="clearfix"></div>
     
     <div class="col-6 mvn">
-      <section class="portfolio-block">
+      <section class="portfolio-block wow fadeInUp" data-wow-delay="0.5s">
         <div class="portfolio-image-block">
           <a class="portfolio-image-block__link" href="./easyeasyapps-apps.html">
             <img src="images/portfolio/easyeasyapps/easyeasyapps-apps.jpg" class="img-responsive fit-cover">
@@ -166,7 +180,7 @@
     </div>
     
     <div class="col-6 mvn">
-      <section class="portfolio-block">
+      <section class="portfolio-block wow fadeInUp" data-wow-delay="0.5s">
         <div class="portfolio-image-block">
           <a class="portfolio-image-block__link" href="./happyvet-site-ria.html">
             <img src="images/portfolio/happyvet/happy-vet-site-ria.jpg" class="img-responsive fit-cover">
@@ -187,7 +201,7 @@
     <div class="clearfix"></div>
 
     <div class="col-6 mvn">
-      <section class="portfolio-block">
+      <section class="portfolio-block wow fadeInUp" data-wow-delay="0.5s">
         <div class="portfolio-image-block">
           <a class="portfolio-image-block__link" href="./webcat-site.html">
             <img src="images/portfolio/webcat/webcat-site.jpg" class="img-responsive fit-cover">
@@ -206,7 +220,7 @@
     </div>
     
     <div class="col-6 mvn">
-      <section class="portfolio-block">
+      <section class="portfolio-block wow fadeInUp" data-wow-delay="0.5s">
         <div class="portfolio-image-block">
           <a class="portfolio-image-block__link" href="./portfolio.html">
             <img src="images/portfolio.png" class="img-responsive fit-cover">
@@ -217,7 +231,7 @@
             <div class="portfolio-content-block-text">
               <div class="portfolio-content-block-sub-title serif">Even more</div>
               <div class="portfolio-content-block-title">Coming Soon</div>
-              <a class="mtm btn btn-sm btn-border btn-sharp btn-white text-uppercase" href="./portfolio.html" title="Back to the Portfolio">Back to Porfolio</a>
+              <a class="mtm btn btn-sm btn-border btn-sharp btn-white text-uppercase" href="./portfolio.html" title="Back to the Portfolio">Back to Portfolio</a>
             </div>
           </div>
         </div>
