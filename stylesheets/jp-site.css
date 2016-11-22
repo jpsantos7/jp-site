@@ -3517,73 +3517,82 @@ body {
 }
 
 /* line 46, ../sass/jp-site.scss */
+nav {
+  background: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* line 53, ../sass/jp-site.scss */
 .page-wrapper {
   z-index: 1000;
   overflow: hidden;
 }
-/* line 49, ../sass/jp-site.scss */
+/* line 56, ../sass/jp-site.scss */
 .page-wrapper.home-bg {
   background-image: url(../images/background-jp.png);
 }
-/* line 52, ../sass/jp-site.scss */
+/* line 59, ../sass/jp-site.scss */
 .page-wrapper.resume-bg {
   background-image: url(../images/code.png);
 }
-/* line 55, ../sass/jp-site.scss */
+/* line 62, ../sass/jp-site.scss */
 .page-wrapper.contact-bg {
   background-image: url(../images/contact.png);
 }
-/* line 58, ../sass/jp-site.scss */
+/* line 65, ../sass/jp-site.scss */
 .page-wrapper.portfolio-bg {
   background-image: url(../images/portfolio.png);
 }
-/* line 61, ../sass/jp-site.scss */
+/* line 68, ../sass/jp-site.scss */
 .page-wrapper.thales-bg {
   background-image: url(../images/portfolio/thales/thales-apis-hmi.jpg);
 }
-/* line 64, ../sass/jp-site.scss */
+/* line 71, ../sass/jp-site.scss */
 .page-wrapper.byclosure-site-bg {
   background-image: url(../images/portfolio/byclosure/byclosure-new-site.jpg);
 }
-/* line 67, ../sass/jp-site.scss */
+/* line 74, ../sass/jp-site.scss */
 .page-wrapper.easyeasyapps-site-bg {
   background-image: url(../images/portfolio/easyeasyapps/easyeasyapps-site.jpg);
 }
-/* line 70, ../sass/jp-site.scss */
+/* line 77, ../sass/jp-site.scss */
 .page-wrapper.easyeasyapps-apps-bg {
   background-image: url(../images/portfolio/easyeasyapps/easyeasyapps-apps.jpg);
 }
-/* line 73, ../sass/jp-site.scss */
+/* line 80, ../sass/jp-site.scss */
 .page-wrapper.easyeasyapps-editor-bg {
   background-image: url(../images/portfolio/easyeasyapps/easyeasyapps-editor.jpg);
 }
-/* line 76, ../sass/jp-site.scss */
+/* line 83, ../sass/jp-site.scss */
 .page-wrapper.happy-vet-site-ria-bg {
   background-image: url(../images/portfolio/happyvet/happy-vet-site-ria.jpg);
 }
-/* line 79, ../sass/jp-site.scss */
+/* line 86, ../sass/jp-site.scss */
 .page-wrapper.webcat-site-bg {
   background-image: url(../images/portfolio/webcat/webcat-site.jpg);
 }
-/* line 82, ../sass/jp-site.scss */
+/* line 89, ../sass/jp-site.scss */
 .page-wrapper.segg-site-bg {
   background-image: url(../images/portfolio/segg/segg-site-bg.jpg);
 }
-/* line 85, ../sass/jp-site.scss */
+/* line 92, ../sass/jp-site.scss */
 .page-wrapper[class*="-bg"] {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* line 92, ../sass/jp-site.scss */
+/* line 99, ../sass/jp-site.scss */
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 25px;
   height: 0;
 }
-/* line 97, ../sass/jp-site.scss */
+/* line 104, ../sass/jp-site.scss */
 .video-wrapper iframe {
   position: absolute;
   top: 0;
@@ -3592,7 +3601,7 @@ body {
   height: 100%;
 }
 
-/* line 106, ../sass/jp-site.scss */
+/* line 113, ../sass/jp-site.scss */
 .splash {
   width: 100%;
   overflow: hidden;
@@ -3600,7 +3609,7 @@ body {
 }
 
 /* =========== HEADER MENU ============= */
-/* line 112, ../sass/jp-site.scss */
+/* line 119, ../sass/jp-site.scss */
 .logo-link {
   border-bottom: 0;
   border-bottom: 1px solid transparent;
@@ -3611,7 +3620,7 @@ body {
   outline: 0;
   padding: 18px;
 }
-/* line 121, ../sass/jp-site.scss */
+/* line 128, ../sass/jp-site.scss */
 .logo-link:hover, .logo-link:active {
   border-bottom: 1px solid transparent;
   outline: 0;
@@ -3619,18 +3628,18 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 128, ../sass/jp-site.scss */
+  /* line 135, ../sass/jp-site.scss */
   .logo-link {
     width: 100%;
     text-align: center;
   }
 }
-/* line 133, ../sass/jp-site.scss */
+/* line 140, ../sass/jp-site.scss */
 .header-menu {
   text-align: center;
   padding: 14px 0;
 }
-/* line 136, ../sass/jp-site.scss */
+/* line 143, ../sass/jp-site.scss */
 .header-menu ul {
   border-collapse: separate;
   display: table;
@@ -3642,13 +3651,13 @@ body {
   table-layout: fixed;
   width: 100%;
 }
-/* line 147, ../sass/jp-site.scss */
+/* line 154, ../sass/jp-site.scss */
 .header-menu ul li {
   display: table-cell;
   float: none;
   width: 1%;
 }
-/* line 151, ../sass/jp-site.scss */
+/* line 158, ../sass/jp-site.scss */
 .header-menu ul li a {
   border: 0;
   color: #fff;
@@ -3662,7 +3671,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 163, ../sass/jp-site.scss */
+/* line 170, ../sass/jp-site.scss */
 .header-menu ul li a:after {
   background-color: transparent;
   content: '';
@@ -3678,24 +3687,24 @@ body {
   -moz-transition: width .5s ease, background-color .5s ease;
   transition: width .5s ease, background-color .5s ease;
 }
-/* line 178, ../sass/jp-site.scss */
+/* line 185, ../sass/jp-site.scss */
 .header-menu ul li a:hover, .header-menu ul li a:focus, .header-menu ul li a:active, .header-menu ul li a.active {
   color: #f44336;
   text-decoration: none;
 }
-/* line 184, ../sass/jp-site.scss */
+/* line 191, ../sass/jp-site.scss */
 .header-menu ul li a:hover:after, .header-menu ul li a:focus:after, .header-menu ul li a:active:after, .header-menu ul li a.active:after {
   width: 100%;
   background-color: #f44336;
 }
 
 /* header presentation styles */
-/* line 194, ../sass/jp-site.scss */
+/* line 201, ../sass/jp-site.scss */
 .header {
   color: #fff;
   padding: 15%;
 }
-/* line 197, ../sass/jp-site.scss */
+/* line 204, ../sass/jp-site.scss */
 .header a {
   color: #f44336;
   border-bottom: 1px solid #f44336;
@@ -3706,21 +3715,21 @@ body {
 }
 
 /* =========== FOOTER ============= */
-/* line 209, ../sass/jp-site.scss */
+/* line 216, ../sass/jp-site.scss */
 footer.footer {
   background-color: #222222;
 }
-/* line 211, ../sass/jp-site.scss */
+/* line 218, ../sass/jp-site.scss */
 footer.footer * {
   color: #fff;
 }
-/* line 214, ../sass/jp-site.scss */
+/* line 221, ../sass/jp-site.scss */
 footer.footer a {
   color: #fff;
   display: inline-block;
   text-decoration: none;
 }
-/* line 218, ../sass/jp-site.scss */
+/* line 225, ../sass/jp-site.scss */
 footer.footer a:after {
   background-color: transparent;
   content: '';
@@ -3732,24 +3741,24 @@ footer.footer a:after {
   -moz-transition: width .5s ease, background-color .5s ease;
   transition: width .5s ease, background-color .5s ease;
 }
-/* line 229, ../sass/jp-site.scss */
+/* line 236, ../sass/jp-site.scss */
 footer.footer a:hover, footer.footer a:focus, footer.footer a:active, footer.footer a.active {
   color: #f44336;
   text-decoration: none;
 }
-/* line 235, ../sass/jp-site.scss */
+/* line 242, ../sass/jp-site.scss */
 footer.footer a:hover:after, footer.footer a:focus:after, footer.footer a:active:after, footer.footer a.active:after {
   width: 100%;
   background-color: #f44336;
 }
 
-/* line 242, ../sass/jp-site.scss */
+/* line 249, ../sass/jp-site.scss */
 ul {
   max-width: 26.18182em;
 }
 
 /* link styles */
-/* line 246, ../sass/jp-site.scss */
+/* line 253, ../sass/jp-site.scss */
 p > a {
   color: #f44336;
   border-bottom: 1px solid #f44336;
@@ -3759,12 +3768,12 @@ p > a {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 254, ../sass/jp-site.scss */
+/* line 261, ../sass/jp-site.scss */
 .table {
   display: table;
 }
 
-/* line 257, ../sass/jp-site.scss */
+/* line 264, ../sass/jp-site.scss */
 a, a.social-link {
   border-bottom: 1px solid;
   border-color: transparent;
@@ -3774,44 +3783,44 @@ a, a.social-link {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 265, ../sass/jp-site.scss */
+/* line 272, ../sass/jp-site.scss */
 a:hover, a:focus, a:active, a.active, a.social-link:hover, a.social-link:focus, a.social-link:active, a.social-link.active {
   border-color: #f44336;
   color: #f44336;
   text-decoration: none;
 }
 
-/* line 275, ../sass/jp-site.scss */
+/* line 282, ../sass/jp-site.scss */
 a.social-link:hover, a.social-link:focus, a.social-link:active, a.social-link.active {
   border-color: transparent;
 }
 
-/* line 282, ../sass/jp-site.scss */
+/* line 289, ../sass/jp-site.scss */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* line 287, ../sass/jp-site.scss */
+/* line 294, ../sass/jp-site.scss */
 img.fit-cover {
   object-fit: cover !important;
 }
 
-/* line 291, ../sass/jp-site.scss */
+/* line 298, ../sass/jp-site.scss */
 section {
   float: left;
   overflow: hidden;
   width: 100%;
 }
 
-/* line 297, ../sass/jp-site.scss */
+/* line 304, ../sass/jp-site.scss */
 aside {
   background: pink;
   float: left;
 }
 
-/* line 302, ../sass/jp-site.scss */
+/* line 309, ../sass/jp-site.scss */
 footer {
   clear: both;
 }
