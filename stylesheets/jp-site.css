@@ -3752,8 +3752,13 @@ footer.footer a:hover:after, footer.footer a:focus:after, footer.footer a:active
   background-color: #f44336;
 }
 
+/* line 249, ../sass/jp-site.scss */
+ul {
+  max-width: 26.18182em;
+}
+
 /* link styles */
-/* line 251, ../sass/jp-site.scss */
+/* line 253, ../sass/jp-site.scss */
 p > a {
   color: #f44336;
   border-bottom: 1px solid #f44336;
@@ -3763,12 +3768,12 @@ p > a {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 259, ../sass/jp-site.scss */
+/* line 261, ../sass/jp-site.scss */
 .table {
   display: table;
 }
 
-/* line 262, ../sass/jp-site.scss */
+/* line 264, ../sass/jp-site.scss */
 a, a.social-link {
   border-bottom: 1px solid;
   border-color: transparent;
@@ -3778,44 +3783,44 @@ a, a.social-link {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 270, ../sass/jp-site.scss */
+/* line 272, ../sass/jp-site.scss */
 a:hover, a:focus, a:active, a.active, a.social-link:hover, a.social-link:focus, a.social-link:active, a.social-link.active {
   border-color: #f44336;
   color: #f44336;
   text-decoration: none;
 }
 
-/* line 280, ../sass/jp-site.scss */
+/* line 282, ../sass/jp-site.scss */
 a.social-link:hover, a.social-link:focus, a.social-link:active, a.social-link.active {
   border-color: transparent;
 }
 
-/* line 287, ../sass/jp-site.scss */
+/* line 289, ../sass/jp-site.scss */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* line 292, ../sass/jp-site.scss */
+/* line 294, ../sass/jp-site.scss */
 img.fit-cover {
   object-fit: cover !important;
 }
 
-/* line 296, ../sass/jp-site.scss */
+/* line 298, ../sass/jp-site.scss */
 section {
   float: left;
   overflow: hidden;
   width: 100%;
 }
 
-/* line 302, ../sass/jp-site.scss */
+/* line 304, ../sass/jp-site.scss */
 aside {
   background: pink;
   float: left;
 }
 
-/* line 307, ../sass/jp-site.scss */
+/* line 309, ../sass/jp-site.scss */
 footer {
   clear: both;
 }
